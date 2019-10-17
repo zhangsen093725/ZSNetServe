@@ -1,0 +1,6 @@
+framework module ZSNetServe {
+  umbrella header "ZSNetServe-umbrella.h"
+
+  export *
+  module * { export * }
+}
