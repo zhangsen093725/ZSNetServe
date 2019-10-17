@@ -1,0 +1,11 @@
+use_frameworks!
+
+target 'ZSNetServe_Example' do
+  pod 'ZSNetServe', :path => '../'
+
+  target 'ZSNetServe_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end
