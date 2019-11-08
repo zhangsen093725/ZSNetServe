@@ -507,7 +507,7 @@ import Alamofire
             }
             upload(data,
                    fileKey: fileKey,
-                   mimeType: "image/*",
+                   mimeType: "image/jpeg",
                    to: path,
                    parameters: parameters,
                    method: _method_,
