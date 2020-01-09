@@ -306,7 +306,7 @@ import Alamofire
     }
     
     /// 公共的上传方法
-    class private func upload(_ request: UploadRequest,
+    class private func Upload(_ request: UploadRequest,
                               progress: ((Double) -> Void)? = nil,
                               complete: ((Any?, NSError?) -> Void)? = nil) {
         
@@ -376,7 +376,7 @@ import Alamofire
             switch encodingResult {
             case .success(request: let uploadRequest, streamingFromDisk: _, streamFileURL: _):
                 
-                upload(uploadRequest, progress: progress, complete: complete)
+                Upload(uploadRequest, progress: progress, complete: complete)
                 break
                 
             case .failure(let error):
@@ -389,7 +389,7 @@ import Alamofire
         }
     }
     
-    class public func upload(_ data: Data,
+    class public func Upload(_ data: Data,
                              fileKey: String? = nil,
                              mimeType: String,
                              to path: String,
@@ -402,7 +402,7 @@ import Alamofire
         guard let requestUrl: URL = URL.init(string: path) else { return }
         
         if parameters == nil && fileKey == nil {
-            upload(self.default.upload(data,
+            Upload(self.default.upload(data,
                                        to: requestUrl,
                                        method: method,
                                        headers:headers),
@@ -411,10 +411,11 @@ import Alamofire
             return
         }
         
-        self.default.upload(multipartFormData: multipartFormData(data,
-                                                                 fileKey: fileKey,
-                                                                 mimeType: mimeType,
-                                                                 parameters: parameters),
+        self.default.upload(multipartFormData:
+            multipartFormData(data,
+                              fileKey: fileKey,
+                              mimeType: mimeType,
+                              parameters: parameters),
                             to: requestUrl,
                             method: method,
                             headers: headers,
@@ -422,7 +423,7 @@ import Alamofire
                                                                    complete: complete))
     }
     
-    class public func upload(_ filePath: String,
+    class public func Upload(_ filePath: String,
                              fileKey: String? = nil,
                              mimeType: String,
                              to path: String,
@@ -436,7 +437,7 @@ import Alamofire
         guard let requestUrl: URL = URL.init(string: path) else { return }
         
         if parameters == nil && fileKey == nil {
-            upload(self.default.upload(fileUrl,
+            Upload(self.default.upload(fileUrl,
                                        to: requestUrl,
                                        method: method,
                                        headers:headers),
@@ -445,18 +446,21 @@ import Alamofire
             return
         }
         
-        self.default.upload(multipartFormData: multipartFormData(fileUrl,
-                                                                 fileKey: fileKey,
-                                                                 mimeType: mimeType,
-                                                                 parameters: parameters),
+        self.default.upload(multipartFormData:
+            multipartFormData(
+                fileUrl,
+                fileKey: fileKey,
+                mimeType: mimeType,
+                parameters: parameters),
                             to: requestUrl,
                             method: method,
                             headers: headers,
-                            encodingCompletion: encodingCompletion(progress,
-                                                                   complete: complete))
+                            encodingCompletion:
+            encodingCompletion(progress,
+                               complete: complete))
     }
     
-    class public func upload(_ inputStream: InputStream,
+    class public func Upload(_ inputStream: InputStream,
                              to path: String,
                              method: HTTPMethod = .put,
                              headers: HTTPHeaders? = nil,
@@ -465,7 +469,7 @@ import Alamofire
         
         guard let requestUrl: URL = URL.init(string: path) else { return }
         
-        upload(self.default.upload(inputStream,
+        Upload(self.default.upload(inputStream,
                                    to: requestUrl,
                                    method: method,
                                    headers:headers),
@@ -505,7 +509,7 @@ import Alamofire
                 }
                 return
             }
-            upload(data,
+            Upload(data,
                    fileKey: fileKey,
                    mimeType: "image/jpeg",
                    to: path,
@@ -519,7 +523,7 @@ import Alamofire
         
         if let url = file as? URL {
             
-            upload(url.absoluteString,
+            Upload(url.absoluteString,
                    mimeType: mimeType,
                    to: path,
                    parameters: parameters,
@@ -533,7 +537,7 @@ import Alamofire
         
         if let string = file as? String {
             
-            upload(string,
+            Upload(string,
                    mimeType: mimeType,
                    to: path,
                    parameters: parameters,
@@ -543,5 +547,86 @@ import Alamofire
                    complete: complete)
             return
         }
+    }
+    
+    @objc class public func Upload(files: [Any],
+                                   to path: String,
+                                   fileKey: String,
+                                   parameters: [String: String]? = nil,
+                                   method: JDHTTPMethod = .put,
+                                   headers: HTTPHeaders? = nil,
+                                   progress: ((Double) -> Void)? = nil,
+                                   complete: ((Any?, NSError?) -> Void)? = nil) {
+        
+        guard let requestUrl: URL = URL.init(string: path) else { return }
+        
+        var _method_: HTTPMethod = .put
+        
+        switch method {
+        case .post:
+            _method_ = .post
+        case .get:
+            _method_ = .get
+        case .put:
+            _method_ = .put
+        case .delete:
+            _method_ = .delete
+        }
+        
+        self.default.upload(multipartFormData: { (multableData) in
+            
+            for (key, value) in parameters! {
+                
+                guard let valueData: Data = value.data(using: .utf8) else { continue }
+                
+                multableData.append(valueData, withName: key)
+            }
+            
+            for file in files {
+                
+                if let image = file as? UIImage {
+                    
+                    let data = image.jpegData(compressionQuality: 0.5)
+                    
+                    if data == nil && complete != nil {
+                        let userInfo = [ NSLocalizedDescriptionKey : "图片格式不正确"]
+                        let error: NSError = NSError(domain: NSURLErrorDomain, code: 404, userInfo: userInfo)
+                        complete!(nil, error)
+                        return
+                    }
+
+                    multableData.append(data!, withName: fileKey)
+                    
+                    continue
+                }
+                
+                if let url = file as? URL {
+                    
+                    multableData.append(url, withName: fileKey)
+                    continue
+                }
+                
+                if let filePath = file as? String {
+                    
+                    guard let fileUrl: URL = URL.init(string: filePath) else {
+                        
+                        let userInfo = [ NSLocalizedDescriptionKey : "文件地址不正确"]
+                        let error: NSError = NSError(domain: NSURLErrorDomain, code: 404, userInfo: userInfo)
+                        complete!(nil, error)
+                        
+                        return
+                    }
+                    multableData.append(fileUrl, withName: fileKey)
+                    continue
+                }
+            }
+
+
+        }, to: requestUrl,
+           method: _method_,
+           headers: headers,
+           encodingCompletion:
+            encodingCompletion(progress,
+                               complete: complete))
     }
 }
