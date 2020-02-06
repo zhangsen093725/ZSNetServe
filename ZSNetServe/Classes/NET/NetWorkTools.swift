@@ -345,9 +345,11 @@ import Alamofire
                 multableData.append(valueData, withName: key)
             }
             
+            let ext = mimeType.split(separator: "/").last ?? ""
+            
             let formatter = DateFormatter()
             formatter.dateFormat = "yyyy-MM-dd hh:mm:ss:SSS"
-            let fileName = formatter.string(from: Date())
+            let fileName = formatter.string(from: Date()) + ext
             
             if let data = fileData as? Data {
                 multableData.append(data, withName: fileKey!, fileName: fileName, mimeType: mimeType)
@@ -594,8 +596,12 @@ import Alamofire
                         complete!(nil, error)
                         return
                     }
+                    
+                    let formatter = DateFormatter()
+                    formatter.dateFormat = "yyyy-MM-dd hh:mm:ss:SSS"
+                    let fileName = formatter.string(from: Date()) + ".jpeg"
 
-                    multableData.append(data!, withName: fileKey)
+                    multableData.append(data!, withName: fileKey, fileName: fileName, mimeType: "image/jpeg")
                     
                     continue
                 }
