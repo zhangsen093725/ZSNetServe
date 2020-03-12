@@ -10,6 +10,7 @@
 #endif
 #endif
 
+#import "Reachability.h"
 
 FOUNDATION_EXPORT double ZSNetServeVersionNumber;
 FOUNDATION_EXPORT const unsigned char ZSNetServeVersionString[];

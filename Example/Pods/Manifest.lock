@@ -1,16 +1,23 @@
 PODS:
-  - ZSNetServe (0.1.0)
+  - Alamofire (4.9.1)
+  - ZSNetServe (0.0.5):
+    - Alamofire
 
 DEPENDENCIES:
   - ZSNetServe (from `../`)
+
+SPEC REPOS:
+  trunk:
+    - Alamofire
 
 EXTERNAL SOURCES:
   ZSNetServe:
     :path: "../"
 
 SPEC CHECKSUMS:
-  ZSNetServe: 91789cfd7e2c17608837ab13424ed5dab220e7d8
+  Alamofire: 85e8a02c69d6020a0d734f6054870d7ecb75cf18
+  ZSNetServe: 79bd4c8a041ebff5149296e5a0c546f612a2540c
 
 PODFILE CHECKSUM: 37c201ee3c3112182a4a77b79476c46a3e438683
 
-COCOAPODS: 1.7.5
+COCOAPODS: 1.9.0

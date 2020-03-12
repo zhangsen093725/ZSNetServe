@@ -1,5 +1,5 @@
 //
-//  NetWorkStatus.swift
+//  ZSNetWorkStatus.swift
 //  JadeKing
 //
 //  Created by 张森 on 2019/7/17.
@@ -10,9 +10,9 @@ import Foundation
 import CoreTelephony
 import Alamofire
 
-@objcMembers public class NetWorkStatus: NSObject {
+@objcMembers public class ZSNetWorkStatus: NSObject {
     
-    private static let `default`: NetWorkStatus = NetWorkStatus()
+    private static let `default`: ZSNetWorkStatus = ZSNetWorkStatus()
     private var isContineMake: Bool = false
     private let net: NetworkReachabilityManager? = NetworkReachabilityManager()
     
