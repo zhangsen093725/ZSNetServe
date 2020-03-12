@@ -12,7 +12,7 @@ import Alamofire
 @objcMembers public class ZSNetWorkingTool: NSObject {
     
     public static let `default`: SessionManager = Alamofire.SessionManager.default
-
+    
     /// 网络请求
     /// - Parameters:
     ///   - base: 请求的基础url，比如 https://www.baidu.com/
@@ -138,5 +138,14 @@ import Alamofire
                headers: headers,
                progress: progress,
                completion: completion)
+    }
+    
+    /// 提供Objective-C请求使用
+    class public func zs_objcDownload(_ path: String,
+                                      to url: URL,
+                                      progress: ((Double) -> Void)? = nil,
+                                      completion: (ZSCompletion<Any>)? = nil) {
+        
+        Download(path, to: url, progress: progress, completion: completion)
     }
 }
