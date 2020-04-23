@@ -10,7 +10,7 @@ import Alamofire
 
 extension ZSNetWorkingTool {
     
-    class private func destination(cachesURL: URL) -> DownloadRequest.DownloadFileDestination {
+    class private func destination(cachesURL: URL) -> DownloadRequest.Destination {
         
         return { _, response in
             
@@ -49,7 +49,7 @@ extension ZSNetWorkingTool {
                 
                 guard completion != nil else { return }
                 
-                completion!(response.destinationURL?.path, response.error == nil, response.error as NSError?)
+                completion!(response.fileURL?.path, response.error == nil, response.error as NSError?)
         }
     }
 }

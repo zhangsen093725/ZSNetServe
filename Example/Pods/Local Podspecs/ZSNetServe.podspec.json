@@ -1,6 +1,6 @@
 {
   "name": "ZSNetServe",
-  "version": "0.0.5",
+  "version": "0.1.1",
   "summary": "基于Alamofire的网络请求框架",
   "description": "基于Alamofire的网络请求框架二次封装",
   "homepage": "https://github.com/zhangsen093725/ZSNetServe",
@@ -13,16 +13,16 @@
   },
   "source": {
     "git": "https://github.com/zhangsen093725/ZSNetServe.git",
-    "tag": "0.0.5"
+    "tag": "0.1.1"
   },
   "swift_versions": "5.0",
   "platforms": {
-    "ios": "8.0"
+    "ios": "10.0"
   },
   "source_files": "ZSNetServe/Classes/**/*",
   "dependencies": {
     "Alamofire": [
-
+      "5.1.0"
     ]
   },
   "swift_version": "5.0"

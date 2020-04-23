@@ -69,18 +69,12 @@ import Alamofire
         self.default.net?.stopListening()
     }
     
-    public class func startListening() {
-        self.default.net?.startListening()
-    }
-    
-    public class func observeReachability(complete: ((_ isReachable: Bool) -> Void)?) {
+    public class func startListening(complete: ((_ isReachable: Bool) -> Void)?) {
 
-        self.default.net?.startListening()
-        self.default.net?.listener = { status in
-            
+        self.default.net?.startListening(onUpdatePerforming: { (status) in
             guard complete != nil else { return }
             complete!(status != .notReachable)
-        }
+        })
     }
     
     deinit {

@@ -29,7 +29,7 @@ Pod::Spec.new do |s|
   s.swift_version    = '5.0'
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 
-  s.ios.deployment_target = '8.0'
+  s.ios.deployment_target = '10.0'
 
   s.source_files = 'ZSNetServe/Classes/**/*'
   
@@ -39,5 +39,5 @@ Pod::Spec.new do |s|
 
   # s.public_header_files = 'Pod/Classes/**/*.h'
   # s.frameworks = 'UIKit', 'MapKit'
-  s.dependency 'Alamofire'
+  s.dependency 'Alamofire', '5.1.0'
 end

@@ -101,33 +101,6 @@ extension ZSNetWorkingTool {
         return block
     }
     
-    
-    /// 上传编码的回调
-    /// - Parameters:
-    ///   - progress: 进度
-    ///   - completion: 上传完成的回调
-    class private func encodingCompletion<ResultType>( _ progress: ((Double) -> Void)? = nil,
-                                                       completion: (ZSCompletion<ResultType>)? = nil)
-        -> (SessionManager.MultipartFormDataEncodingResult) -> Void {
-            
-            return { (encodingResult) in
-                
-                switch encodingResult {
-                case .success(request: let uploadRequest, streamingFromDisk: _, streamFileURL: _):
-                    
-                    Upload(uploadRequest, progress: progress, completion: completion)
-                    break
-                    
-                case .failure(let error):
-                    
-                    guard completion != nil else { break }
-                    completion!(nil, false, error as NSError)
-                    break
-                }
-            }
-    }
-    
-    
     /// 通过Data上传
     /// - Parameters:
     ///   - data: 文件Data
@@ -152,25 +125,35 @@ extension ZSNetWorkingTool {
         guard let requestUrl: URL = URL.init(string: path) else { return }
         
         if parameters == nil && fileKey == nil {
-            Upload(self.default.upload(data,
-                                       to: requestUrl,
-                                       method: method,
-                                       headers:headers),
+            
+            let request = self.default.upload(
+                data,
+                to: requestUrl,
+                method: method,
+                headers:headers)
+            
+            Upload(request,
                    progress: progress,
                    completion: completion)
             return
         }
         
-        self.default.upload(multipartFormData:
-            multipartFormFiles([data],
-                               fileKey: fileKey!,
-                               mimeType: mimeType,
-                               parameters: parameters),
-                            to: requestUrl,
-                            method: method,
-                            headers: headers,
-                            encodingCompletion: encodingCompletion(progress,
-                                                                   completion: completion))
+        
+        let multipartFormFilesHandle = multipartFormFiles(
+            [data],
+            fileKey: fileKey!,
+            mimeType: mimeType,
+            parameters: parameters)
+        
+        let request = self.default.upload(
+            multipartFormData: multipartFormFilesHandle,
+            to: requestUrl,
+            method: method,
+            headers: headers)
+        
+        Upload(request,
+               progress: progress,
+               completion: completion)
     }
     
     
@@ -199,27 +182,34 @@ extension ZSNetWorkingTool {
         guard let requestUrl: URL = URL.init(string: path) else { return }
         
         if parameters == nil && fileKey == nil {
-            Upload(self.default.upload(fileUrl,
-                                       to: requestUrl,
-                                       method: method,
-                                       headers:headers),
+            
+            let request = self.default.upload(
+                fileUrl,
+                to: requestUrl,
+                method: method,
+                headers:headers)
+            
+            Upload(request,
                    progress: progress,
                    completion: completion)
             return
         }
         
-        self.default.upload(multipartFormData:
-            multipartFormFiles(
-                [fileUrl],
-                fileKey: fileKey!,
-                mimeType: mimeType,
-                parameters: parameters),
-                            to: requestUrl,
-                            method: method,
-                            headers: headers,
-                            encodingCompletion:
-            encodingCompletion(progress,
-                               completion: completion))
+        let multipartFormFilesHandle = multipartFormFiles(
+            [fileUrl],
+            fileKey: fileKey!,
+            mimeType: mimeType,
+            parameters: parameters)
+        
+        let request = self.default.upload(
+            multipartFormData: multipartFormFilesHandle,
+            to: requestUrl,
+            method: method,
+            headers: headers)
+        
+        Upload(request,
+               progress: progress,
+               completion: completion)
     }
     
     
@@ -241,10 +231,13 @@ extension ZSNetWorkingTool {
         
         guard let requestUrl: URL = URL.init(string: path) else { return }
         
-        Upload(self.default.upload(inputStream,
-                                   to: requestUrl,
-                                   method: method,
-                                   headers:headers),
+        let request = self.default.upload(
+            inputStream,
+            to: requestUrl,
+            method: method,
+            headers:headers)
+        
+        Upload(request,
                progress: progress,
                completion: completion)
     }
@@ -342,15 +335,20 @@ extension ZSNetWorkingTool {
         
         guard let requestUrl: URL = URL.init(string: path) else { return }
         
-        self.default.upload(multipartFormData:
-            multipartFormFiles(
-                files,
-                fileKey: fileKey,
-                parameters: parameters), to: requestUrl,
-                                         method: method,
-                                         headers: headers,
-                                         encodingCompletion:
-            encodingCompletion(progress,
-                               completion: completion))
+        
+        let multipartFormFilesHandle = multipartFormFiles(
+            files,
+            fileKey: fileKey,
+            parameters: parameters)
+        
+        let request = self.default.upload(
+            multipartFormData: multipartFormFilesHandle,
+            to: requestUrl,
+            method: method,
+            headers: headers)
+        
+        Upload(request,
+               progress: progress,
+               completion: completion)
     }
 }

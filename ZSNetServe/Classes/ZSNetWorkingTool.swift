@@ -11,7 +11,7 @@ import Alamofire
 
 @objcMembers public class ZSNetWorkingTool: NSObject {
     
-    public static let `default`: SessionManager = Alamofire.SessionManager.default
+    public static let `default`: Session = Alamofire.Session.default
     
     /// 网络请求
     /// - Parameters:
@@ -36,8 +36,8 @@ import Alamofire
         var httpHeaders = zs_defaultHTTPHeaders
         
         if let tempHeaders = headers {
-            for (key, value) in tempHeaders {
-                httpHeaders[key] = value
+            for tempHeader in tempHeaders {
+                httpHeaders[tempHeader.name] = tempHeader.value
             }
         }
         
@@ -86,6 +86,8 @@ import Alamofire
                                      headers: [String : String]? = nil,
                                      completion: (ZSCompletion<Any>)? = nil) {
         
+       let _headers_ = headers == nil ? nil : HTTPHeaders(headers!)
+        
         zs_request(base,
                    path: path,
                    parameters: parameters,
@@ -93,7 +95,7 @@ import Alamofire
                    method: zs_method(method),
                    encoding: encoding,
                    response: response,
-                   headers: headers,
+                   headers: _headers_,
                    completion: completion)
     }
     
@@ -108,13 +110,15 @@ import Alamofire
                                     progress: ((Double) -> Void)? = nil,
                                     completion: (ZSCompletion<Any>)? = nil) {
         
+        let _headers_ = headers == nil ? nil : HTTPHeaders(headers!)
+        
         Upload(file,
                to: path,
                fileKey: fileKey,
                mimeType: mimeType,
                parameters: parameters,
                method: zs_method(method),
-               headers: headers,
+               headers: _headers_,
                progress: progress,
                completion: completion)
         
