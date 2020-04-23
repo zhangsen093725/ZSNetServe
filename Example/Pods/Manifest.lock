@@ -1,6 +1,6 @@
 PODS:
   - Alamofire (5.1.0)
-  - ZSNetServe (0.1.1):
+  - ZSNetServe (0.1.2):
     - Alamofire (= 5.1.0)
 
 DEPENDENCIES:
@@ -16,8 +16,8 @@ EXTERNAL SOURCES:
 
 SPEC CHECKSUMS:
   Alamofire: 9d5c5f602928e512395b30950c5984eca840093c
-  ZSNetServe: d09f25171f376ebff92ecb8d1f2a8d5a1814fd8c
+  ZSNetServe: 8a26d01016787bb17cb707b05b0f19ac9c849c59
 
-PODFILE CHECKSUM: f32757ae90d292a7be45acfac93c75dcd7a7ec8c
+PODFILE CHECKSUM: 397bed683ef1eecb0903738cf8f665407b6f3e29
 
 COCOAPODS: 1.9.0
