@@ -22,7 +22,7 @@
   "source_files": "ZSNetServe/Classes/**/*",
   "dependencies": {
     "Alamofire": [
-      "5.1.0"
+
     ]
   },
   "swift_version": "5.0"

@@ -31,26 +31,30 @@ import Alamofire
                                              encoding: RequestEncoding = .URLDefult,
                                              response: ResponseEncoding = .JSON,
                                              headers: HTTPHeaders? = nil,
+                                             contentType: Set<String>? = nil,
                                              completion: (ZSCompletion<ResultType>)? = nil) {
         
         var httpHeaders = zs_defaultHTTPHeaders
         
-        if let tempHeaders = headers {
-            for tempHeader in tempHeaders {
-                httpHeaders[tempHeader.name] = tempHeader.value
-            }
+        headers?.forEach { httpHeaders.add(name: $0.name, value: $0.value) }
+        
+        var _contentType_ = zs_contentType
+        
+        if let tempContentType = contentType {
+            _contentType_  = _contentType_.union(tempContentType)
         }
         
         self.default.session.configuration.timeoutIntervalForRequest = timeOut
         
         let url = base + path
         
-        let request: DataRequest = self.default.request(url,
-                                                        method: method,
-                                                        parameters: parameters,
-                                                        encoding: zs_parameterEncoding(encoding: encoding),
-                                                        headers: httpHeaders)
-            .validate(contentType: zs_contentType)
+        let request: DataRequest = self.default.request(
+            url,
+            method: method,
+            parameters: parameters,
+            encoding: zs_parameterEncoding(encoding: encoding),
+            headers: httpHeaders)
+            .validate(contentType: _contentType_)
         
         switch response {
         case .JSON:
@@ -84,9 +88,10 @@ import Alamofire
                                      encoding: RequestEncoding = .URLDefult,
                                      response: ResponseEncoding = .JSON,
                                      headers: [String : String]? = nil,
+                                     contentType: Set<String>? = nil,
                                      completion: (ZSCompletion<Any>)? = nil) {
         
-       let _headers_ = headers == nil ? nil : HTTPHeaders(headers!)
+        let _headers_ = headers == nil ? nil : HTTPHeaders(headers!)
         
         zs_request(base,
                    path: path,
@@ -96,6 +101,7 @@ import Alamofire
                    encoding: encoding,
                    response: response,
                    headers: _headers_,
+                   contentType: contentType,
                    completion: completion)
     }
     
@@ -130,16 +136,18 @@ import Alamofire
                                     fileKey: String,
                                     parameters: [String: String]? = nil,
                                     method: ZSHTTPMethod = .put,
-                                    headers: HTTPHeaders? = nil,
+                                    headers: [String : String]? = nil,
                                     progress: ((Double) -> Void)? = nil,
                                     completion: (ZSCompletion<Any>)? = nil) {
+        
+        let _headers_ = headers == nil ? nil : HTTPHeaders(headers!)
         
         Upload(files: files,
                to: path,
                fileKey: fileKey,
                parameters: parameters,
                method: zs_method(method),
-               headers: headers,
+               headers: _headers_,
                progress: progress,
                completion: completion)
     }

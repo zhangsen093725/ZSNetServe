@@ -75,11 +75,11 @@ extension ZSNetWorkingTool {
             return "Alamofire"
         }()
         
-        return [
+        return HTTPHeaders([
             "Accept-Encoding": acceptEncoding,
             "Accept-Language": acceptLanguage,
             "User-Agent"     : userAgent
-        ]
+        ])
     }()
     
     
