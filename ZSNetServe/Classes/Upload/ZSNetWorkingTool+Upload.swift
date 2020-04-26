@@ -8,7 +8,7 @@
 import Foundation
 import Alamofire
 
-extension ZSNetWorkingTool {
+public extension ZSNetWorkingTool {
     
     /// 文件上传
     /// - Parameters:
@@ -112,7 +112,7 @@ extension ZSNetWorkingTool {
     ///   - headers: 请求头
     ///   - progress: 上传进度
     ///   - completion: 上传完成的回调
-    class public func Upload<ResultType>(_ data: Data,
+    class func Upload<ResultType>(_ data: Data,
                                          to path: String,
                                          fileKey: String? = nil,
                                          mimeType: String,
@@ -168,7 +168,7 @@ extension ZSNetWorkingTool {
     ///   - headers: 请求头
     ///   - progress: 上传进度
     ///   - completion: 上传完成的回调
-    class public func Upload<ResultType>(_ filePath: String,
+    class func Upload<ResultType>(_ filePath: String,
                                          to path: String,
                                          fileKey: String? = nil,
                                          mimeType: String,
@@ -222,7 +222,7 @@ extension ZSNetWorkingTool {
     ///   - headers: 请求头
     ///   - progress: 上传进度
     ///   - completion: 上传完成的回调
-    class public func Upload<ResultType>(_ inputStream: InputStream,
+    class func Upload<ResultType>(_ inputStream: InputStream,
                                          to path: String,
                                          method: HTTPMethod = .post,
                                          headers: HTTPHeaders? = nil,
@@ -255,7 +255,7 @@ extension ZSNetWorkingTool {
     ///   - headers: 请求头
     ///   - progress: 上传进度
     ///   - completion: 上传完成的回调
-    class public func Upload<ResultType>(_ file: Any,
+    class func Upload<ResultType>(_ file: Any,
                                          to path: String,
                                          fileKey: String? = nil,
                                          mimeType: String,
@@ -314,6 +314,8 @@ extension ZSNetWorkingTool {
         }
     }
     
+    
+    
     /// 多文件上传
     /// - Parameters:
     ///   - files: 文件数组
@@ -324,7 +326,7 @@ extension ZSNetWorkingTool {
     ///   - headers: 请求头
     ///   - progress: 上传进度
     ///   - completion: 上传完成的回调
-    class public func Upload<ResultType>(files: [Any],
+    class func Upload<ResultType>(files: [Any],
                                          to path: String,
                                          fileKey: String,
                                          parameters: [String: String]? = nil,

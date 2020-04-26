@@ -11,9 +11,9 @@ import Foundation
     case JSON = 1, Data
 }
 
-extension ZSNetWorkingTool {
+public extension ZSNetWorkingTool {
     
-    public typealias ZSCompletion<ResultType> =
+    typealias ZSCompletion<ResultType> =
         (_ responseObject: ResultType?,
         _ isSuccess: Bool,
         _ error: Error?) -> Void

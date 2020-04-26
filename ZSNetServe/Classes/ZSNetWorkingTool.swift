@@ -13,6 +13,36 @@ import Alamofire
     
     public static let `default`: Session = Alamofire.Session.default
     
+    /// 网络请求的httpHeader
+    open class var zs_httpHeaders: [String : String] {
+        return [:]
+    }
+    
+    /// 网络请求的contentType， defult：["application/json", "text/json", "text/javascript", "text/html", "text/plain", "application/atom+xml", "application/xml", "text/xml", "image/png", "image/jpeg", "multipart/form-data"]
+    open class var zs_contentType: Set<String> {
+        return []
+    }
+    
+    /// 网络请求超时时长，默认为 30 s
+    open class var zs_timeOut: TimeInterval {
+        return 30
+    }
+    
+    /// 网络请求编码方式，默认为URLDefult
+    open class var zs_requestEncoding: RequestEncoding {
+        return .URLDefult
+    }
+    
+    /// 网络请求响应编码方式，默认为JSON
+    open class var zs_responseEncoding: ResponseEncoding {
+        return .JSON
+    }
+}
+
+
+
+
+public extension ZSNetWorkingTool {
     /// 网络请求
     /// - Parameters:
     ///   - base: 请求的基础url，比如 https://www.baidu.com/
@@ -23,22 +53,22 @@ import Alamofire
     ///   - response: 响应编码，默认为 JSON
     ///   - headers: 请求httpHeader
     ///   - completion: 网络请求回调
-    class public func zs_request<ResultType>(_ base: String,
-                                             path: String,
-                                             parameters: Parameters? = nil,
-                                             timeOut: TimeInterval = 10,
-                                             method: HTTPMethod = .get,
-                                             encoding: RequestEncoding = .URLDefult,
-                                             response: ResponseEncoding = .JSON,
-                                             headers: HTTPHeaders? = nil,
-                                             contentType: Set<String>? = nil,
-                                             completion: (ZSCompletion<ResultType>)? = nil) {
+    class func zs_request<ResultType>(_ base: String,
+                                      path: String,
+                                      parameters: Parameters? = nil,
+                                      timeOut: TimeInterval = 30,
+                                      method: HTTPMethod = .get,
+                                      encoding: RequestEncoding = .URLDefult,
+                                      response: ResponseEncoding = .JSON,
+                                      headers: [String: String]? = nil,
+                                      contentType: Set<String>? = nil,
+                                      completion: (ZSCompletion<ResultType>)? = nil) {
         
         var httpHeaders = zs_defaultHTTPHeaders
         
-        headers?.forEach { httpHeaders.add(name: $0.name, value: $0.value) }
+        headers?.forEach { httpHeaders.add(name: $0.key, value: $0.value) }
         
-        var _contentType_ = zs_contentType
+        var _contentType_ = zs_defultContentType
         
         if let tempContentType = contentType {
             _contentType_  = _contentType_.union(tempContentType)
@@ -80,18 +110,16 @@ import Alamofire
     }
     
     /// 提供Objective-C请求使用
-    class public func zs_objcRequest(_ base: String,
-                                     path: String,
-                                     parameters: [String : Any]? = nil,
-                                     timeOut: TimeInterval = 10,
-                                     method: ZSHTTPMethod = .get,
-                                     encoding: RequestEncoding = .URLDefult,
-                                     response: ResponseEncoding = .JSON,
-                                     headers: [String : String]? = nil,
-                                     contentType: Set<String>? = nil,
-                                     completion: (ZSCompletion<Any>)? = nil) {
-        
-        let _headers_ = headers == nil ? nil : HTTPHeaders(headers!)
+    @objc class func zs_objcRequest(_ base: String,
+                                    path: String,
+                                    parameters: [String : Any]? = nil,
+                                    timeOut: TimeInterval = 30,
+                                    method: ZSHTTPMethod = .get,
+                                    encoding: RequestEncoding = .URLDefult,
+                                    response: ResponseEncoding = .JSON,
+                                    headers: [String : String]? = nil,
+                                    contentType: Set<String>? = nil,
+                                    completion: (ZSCompletion<Any>)? = nil) {
         
         zs_request(base,
                    path: path,
@@ -100,21 +128,21 @@ import Alamofire
                    method: zs_method(method),
                    encoding: encoding,
                    response: response,
-                   headers: _headers_,
+                   headers: headers,
                    contentType: contentType,
                    completion: completion)
     }
     
     /// 提供Objective-C请求使用
-    class public func zs_objcUpload(_ file: Any,
-                                    to path: String,
-                                    fileKey: String? = nil,
-                                    mimeType: String,
-                                    parameters: [String: String]? = nil,
-                                    method: ZSHTTPMethod = .put,
-                                    headers: [String : String]? = nil,
-                                    progress: ((Double) -> Void)? = nil,
-                                    completion: (ZSCompletion<Any>)? = nil) {
+    @objc class func zs_objcUpload(_ file: Any,
+                                   to path: String,
+                                   fileKey: String? = nil,
+                                   mimeType: String,
+                                   parameters: [String: String]? = nil,
+                                   method: ZSHTTPMethod = .put,
+                                   headers: [String : String]? = nil,
+                                   progress: ((Double) -> Void)? = nil,
+                                   completion: (ZSCompletion<Any>)? = nil) {
         
         let _headers_ = headers == nil ? nil : HTTPHeaders(headers!)
         
@@ -131,14 +159,14 @@ import Alamofire
     }
     
     /// 提供Objective-C请求使用
-    class public func zs_objcUpload(files: [Any],
-                                    to path: String,
-                                    fileKey: String,
-                                    parameters: [String: String]? = nil,
-                                    method: ZSHTTPMethod = .put,
-                                    headers: [String : String]? = nil,
-                                    progress: ((Double) -> Void)? = nil,
-                                    completion: (ZSCompletion<Any>)? = nil) {
+    @objc class func zs_objcUpload(files: [Any],
+                                   to path: String,
+                                   fileKey: String,
+                                   parameters: [String: String]? = nil,
+                                   method: ZSHTTPMethod = .put,
+                                   headers: [String : String]? = nil,
+                                   progress: ((Double) -> Void)? = nil,
+                                   completion: (ZSCompletion<Any>)? = nil) {
         
         let _headers_ = headers == nil ? nil : HTTPHeaders(headers!)
         
@@ -153,10 +181,10 @@ import Alamofire
     }
     
     /// 提供Objective-C请求使用
-    class public func zs_objcDownload(_ path: String,
-                                      to url: URL,
-                                      progress: ((Double) -> Void)? = nil,
-                                      completion: (ZSCompletion<Any>)? = nil) {
+    @objc class func zs_objcDownload(_ path: String,
+                                     to url: URL,
+                                     progress: ((Double) -> Void)? = nil,
+                                     completion: (ZSCompletion<Any>)? = nil) {
         
         Download(path, to: url, progress: progress, completion: completion)
     }

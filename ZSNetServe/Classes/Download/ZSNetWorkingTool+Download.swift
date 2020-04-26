@@ -8,7 +8,7 @@
 import Foundation
 import Alamofire
 
-extension ZSNetWorkingTool {
+public extension ZSNetWorkingTool {
     
     class private func destination(cachesURL: URL) -> DownloadRequest.Destination {
         
@@ -31,7 +31,7 @@ extension ZSNetWorkingTool {
     ///   - url: 下载完成后保存资源的位置，默认为 cachesDirectory
     ///   - progress: 进度
     ///   - completion: 下载完成的回调
-    class public func Download(_ path: String,
+    class func Download(_ path: String,
                                to url: URL = FileManager.default.urls(for: .cachesDirectory, in: .userDomainMask)[0],
                                progress: ((Double) -> Void)? = nil,
                                completion: (ZSCompletion<String>)? = nil) {

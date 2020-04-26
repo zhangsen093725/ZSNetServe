@@ -8,32 +8,20 @@
 import Foundation
 import Alamofire
 
-extension ZSNetWorkingTool {
+public extension ZSNetWorkingTool {
     
     /// get请求
     /// - Parameters:
     ///   -  url: 请求的url
     ///   - parameters: 请求的参数
-    ///   - timeOut: 请求超时 默认为 30 秒
-    ///   - encoding: 请求编码，默认为 URLDefult
-    ///   - response: 响应编码，默认为 JSON
-    ///   - headers: 请求httpHeader
     ///   - completion: 网络请求回调
-    class open func GET<ResultType>(_ url: String,
+    class func GET<ResultType>(_ url: String,
                                     parameters: Parameters? = nil,
-                                    timeOut: TimeInterval = 30,
-                                    encoding: RequestEncoding = .URLDefult,
-                                    response: ResponseEncoding = .JSON,
-                                    headers: HTTPHeaders? = nil,
                                     completion: (ZSCompletion<ResultType>)?) {
         
         GET(url,
             path: "",
             parameters: parameters,
-            timeOut: timeOut,
-            encoding: encoding,
-            response: response,
-            headers: headers,
             completion: completion)
     }
     
@@ -46,14 +34,16 @@ extension ZSNetWorkingTool {
     ///   - encoding: 请求编码，默认为 URLDefult
     ///   - response: 响应编码，默认为 JSON
     ///   - headers: 请求httpHeader
+    ///   - contentType: 请求的contentType
     ///   - completion: 网络请求回调
-    class public func GET<ResultType>(_ base: String,
+    class func GET<ResultType>(_ base: String,
                                       path: String,
                                       parameters: Parameters? = nil,
-                                      timeOut: TimeInterval = 30,
-                                      encoding: RequestEncoding = .URLDefult,
-                                      response: ResponseEncoding = .JSON,
-                                      headers: HTTPHeaders? = nil,
+                                      timeOut: TimeInterval = zs_timeOut,
+                                      encoding: RequestEncoding = zs_requestEncoding,
+                                      response: ResponseEncoding = zs_responseEncoding,
+                                      headers: [String: String] = zs_httpHeaders,
+                                      contentType: Set<String> = zs_contentType,
                                       completion: (ZSCompletion<ResultType>)?) {
         
         zs_request(base,
@@ -64,6 +54,7 @@ extension ZSNetWorkingTool {
                    encoding: encoding,
                    response: response,
                    headers: headers,
+                   contentType: contentType,
                    completion: completion)
     }
 }

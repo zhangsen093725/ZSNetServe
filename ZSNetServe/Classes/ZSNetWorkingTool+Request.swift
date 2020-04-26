@@ -16,10 +16,10 @@ import Alamofire
     case option = 1, post = 2, get = 3, put = 4, head = 5, delete = 6, connect = 7
 }
 
-extension ZSNetWorkingTool {
+public extension ZSNetWorkingTool {
     
     /// defaultHTTPHeaders
-    public static let zs_defaultHTTPHeaders: HTTPHeaders = {
+    static let zs_defaultHTTPHeaders: HTTPHeaders = {
         // Accept-Encoding HTTP Header; see https://tools.ietf.org/html/rfc7230#section-4.2.3
         let acceptEncoding: String = "gzip;q=1.0, compress;q=0.5"
         
@@ -84,7 +84,7 @@ extension ZSNetWorkingTool {
     
     
     /// contentType
-    public static let zs_contentType: Set<String> = {
+    static let zs_defultContentType: Set<String> = {
         
         return ["application/json",
                 "text/json",
@@ -100,7 +100,7 @@ extension ZSNetWorkingTool {
     }()
     
     
-    public class func zs_parameterEncoding(encoding: RequestEncoding) -> ParameterEncoding {
+    class func zs_parameterEncoding(encoding: RequestEncoding) -> ParameterEncoding {
         switch encoding {
         case .URLDefult:
             return URLEncoding.default
@@ -113,7 +113,7 @@ extension ZSNetWorkingTool {
         }
     }
     
-    public class func zs_method(_ method: ZSHTTPMethod) -> HTTPMethod {
+    class func zs_method(_ method: ZSHTTPMethod) -> HTTPMethod {
         
         var _method_: HTTPMethod = .put
         
