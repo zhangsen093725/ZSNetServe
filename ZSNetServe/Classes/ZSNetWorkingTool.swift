@@ -9,7 +9,7 @@
 import Foundation
 import Alamofire
 
-@objcMembers public class ZSNetWorkingTool: NSObject {
+@objcMembers open class ZSNetWorkingTool: NSObject {
     
     public static let `default`: Session = Alamofire.Session.default
     
