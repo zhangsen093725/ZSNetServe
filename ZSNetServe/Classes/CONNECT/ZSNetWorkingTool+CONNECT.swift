@@ -12,10 +12,12 @@ public extension ZSNetWorkingTool {
     
     /// connect请求
     /// - Parameters:
-    ///   -  url: 请求的url
+    ///   -  url: 请求的基础url，比如 https://www.baidu.com/ 或 https://www.baidu.com/search/page
+    ///   -  path: 请求的url path，比如 search/page，若url为完整链接，则path为“”
     ///   - parameters: 请求的参数
     ///   - completion: 网络请求回调
-    class func CONNECT<ResultType>(_ url: String,
+    class func CONNECT<ResultType>(url: String,
+                                   path: String = "",
                                    parameters: Parameters? = nil,
                                    completion: (ZSCompletion<ResultType>)?) {
         

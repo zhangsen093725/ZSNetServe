@@ -15,9 +15,10 @@ public extension ZSNetWorkingTool {
     ///   - request: UploadRequest
     ///   - progress: 进度
     ///   - completion: 上传完成的回调
-    class private func Upload<ResultType>(_ request: UploadRequest,
-                                          progress: ((Double) -> Void)? = nil,
-                                          completion: (ZSCompletion<ResultType>)? = nil) {
+    class private func Upload<ResultType>(
+        _ request: UploadRequest,
+        progress: ((Double) -> Void)? = nil,
+        completion: (ZSCompletion<ResultType>)? = nil) {
         
         request.validate(contentType: zs_contentType).uploadProgress(queue: DispatchQueue.main, closure: { (progressObject) in
             
@@ -48,10 +49,11 @@ public extension ZSNetWorkingTool {
     ///   - fileKey: 文件对应的 parameters 的Key
     ///   - mimeType: 文件mimeType
     ///   - parameters: 携带的参数
-    class private func multipartFormFiles(_ files: [Any],
-                                          fileKey: String,
-                                          mimeType: String? = nil,
-                                          parameters: [String: String]? = nil) -> (MultipartFormData) -> Void {
+    class private func multipartFormFiles(
+        _ files: [Any],
+        fileKey: String,
+        mimeType: String? = nil,
+        parameters: [String: String]? = nil) -> (MultipartFormData) -> Void {
         
         let block: (MultipartFormData) -> Void = { multableData in
             
@@ -112,15 +114,16 @@ public extension ZSNetWorkingTool {
     ///   - headers: 请求头
     ///   - progress: 上传进度
     ///   - completion: 上传完成的回调
-    class func Upload<ResultType>(_ data: Data,
-                                         to path: String,
-                                         fileKey: String? = nil,
-                                         mimeType: String,
-                                         parameters: [String: String]? = nil,
-                                         method: HTTPMethod = .post,
-                                         headers: HTTPHeaders? = nil,
-                                         progress: ((Double) -> Void)? = nil,
-                                         completion: (ZSCompletion<ResultType>)? = nil) {
+    class func Upload<ResultType>(
+        _ data: Data,
+        to path: String,
+        fileKey: String? = nil,
+        mimeType: String,
+        parameters: [String: String]? = nil,
+        method: HTTPMethod = .post,
+        headers: HTTPHeaders? = nil,
+        progress: ((Double) -> Void)? = nil,
+        completion: (ZSCompletion<ResultType>)? = nil) {
         
         guard let requestUrl: URL = URL.init(string: path) else { return }
         
@@ -168,15 +171,16 @@ public extension ZSNetWorkingTool {
     ///   - headers: 请求头
     ///   - progress: 上传进度
     ///   - completion: 上传完成的回调
-    class func Upload<ResultType>(_ filePath: String,
-                                         to path: String,
-                                         fileKey: String? = nil,
-                                         mimeType: String,
-                                         parameters: [String: String]? = nil,
-                                         method: HTTPMethod = .post,
-                                         headers: HTTPHeaders? = nil,
-                                         progress: ((Double) -> Void)? = nil,
-                                         completion: (ZSCompletion<ResultType>)? = nil) {
+    class func Upload<ResultType>(
+        _ filePath: String,
+        to path: String,
+        fileKey: String? = nil,
+        mimeType: String,
+        parameters: [String: String]? = nil,
+        method: HTTPMethod = .post,
+        headers: HTTPHeaders? = nil,
+        progress: ((Double) -> Void)? = nil,
+        completion: (ZSCompletion<ResultType>)? = nil) {
         
         guard let fileUrl: URL = URL.init(string: filePath) else { return }
         guard let requestUrl: URL = URL.init(string: path) else { return }
@@ -222,12 +226,13 @@ public extension ZSNetWorkingTool {
     ///   - headers: 请求头
     ///   - progress: 上传进度
     ///   - completion: 上传完成的回调
-    class func Upload<ResultType>(_ inputStream: InputStream,
-                                         to path: String,
-                                         method: HTTPMethod = .post,
-                                         headers: HTTPHeaders? = nil,
-                                         progress: ((Double) -> Void)? = nil,
-                                         completion: (ZSCompletion<ResultType>)? = nil) {
+    class func Upload<ResultType>(
+        _ inputStream: InputStream,
+        to path: String,
+        method: HTTPMethod = .post,
+        headers: HTTPHeaders? = nil,
+        progress: ((Double) -> Void)? = nil,
+        completion: (ZSCompletion<ResultType>)? = nil) {
         
         guard let requestUrl: URL = URL.init(string: path) else { return }
         
@@ -255,15 +260,16 @@ public extension ZSNetWorkingTool {
     ///   - headers: 请求头
     ///   - progress: 上传进度
     ///   - completion: 上传完成的回调
-    class func Upload<ResultType>(_ file: Any,
-                                         to path: String,
-                                         fileKey: String? = nil,
-                                         mimeType: String,
-                                         parameters: [String: String]? = nil,
-                                         method: HTTPMethod = .post,
-                                         headers: HTTPHeaders? = nil,
-                                         progress: ((Double) -> Void)? = nil,
-                                         completion: (ZSCompletion<ResultType>)? = nil) {
+    class func Upload<ResultType>(
+        _ file: Any,
+        to path: String,
+        fileKey: String? = nil,
+        mimeType: String,
+        parameters: [String: String]? = nil,
+        method: HTTPMethod = .post,
+        headers: HTTPHeaders? = nil,
+        progress: ((Double) -> Void)? = nil,
+        completion: (ZSCompletion<ResultType>)? = nil) {
         
         if let image = file as? UIImage {
             guard let data: Data = image.jpegData(compressionQuality: 0.5) else {
@@ -326,14 +332,15 @@ public extension ZSNetWorkingTool {
     ///   - headers: 请求头
     ///   - progress: 上传进度
     ///   - completion: 上传完成的回调
-    class func Upload<ResultType>(files: [Any],
-                                         to path: String,
-                                         fileKey: String,
-                                         parameters: [String: String]? = nil,
-                                         method: HTTPMethod = .post,
-                                         headers: HTTPHeaders? = nil,
-                                         progress: ((Double) -> Void)? = nil,
-                                         completion: (ZSCompletion<ResultType>)? = nil) {
+    class func Upload<ResultType>(
+        files: [Any],
+        to path: String,
+        fileKey: String,
+        parameters: [String: String]? = nil,
+        method: HTTPMethod = .post,
+        headers: HTTPHeaders? = nil,
+        progress: ((Double) -> Void)? = nil,
+        completion: (ZSCompletion<ResultType>)? = nil) {
         
         guard let requestUrl: URL = URL.init(string: path) else { return }
         
