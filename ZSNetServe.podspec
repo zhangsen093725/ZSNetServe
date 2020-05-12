@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'ZSNetServe'
-  s.version          = '0.1.6'
+  s.version          = '0.1.7'
   s.summary          = '基于Alamofire的网络请求框架'
 
 # This description is used to generate tags and improve search results.

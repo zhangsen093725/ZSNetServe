@@ -39,24 +39,24 @@ public extension ZSNetWorkingTool {
     ///   - contentType: 请求的contentType
     ///   - completion: 网络请求回调
     class func POST<ResultType>(_ base: String,
-                                path: String,
-                                parameters: Parameters? = nil,
-                                timeOut: TimeInterval = zs_timeOut,
-                                encoding: RequestEncoding = zs_requestEncoding,
-                                response: ResponseEncoding = zs_responseEncoding,
-                                headers: [String: String] = zs_httpHeaders,
-                                contentType: Set<String> = zs_contentType,
-                                completion: (ZSCompletion<ResultType>)?) {
-        
+                                   path: String,
+                                   parameters: Parameters? = nil,
+                                   timeOut: TimeInterval? = nil,
+                                   encoding: RequestEncoding? = nil,
+                                   response: ResponseEncoding? = nil,
+                                   headers: [String: String] = [:],
+                                   contentType: Set<String> = [],
+                                   completion: (ZSCompletion<ResultType>)?) {
+
         zs_request(base,
                    path: path,
                    parameters: parameters,
-                   timeOut: timeOut,
+                   timeOut: timeOut == nil ? zs_timeOut : timeOut!,
                    method: .post,
-                   encoding: encoding,
-                   response: response,
-                   headers: headers,
-                   contentType: contentType,
+                   encoding: encoding == nil ? zs_requestEncoding : encoding!,
+                   response: response == nil ? zs_responseEncoding : response!,
+                   headers: headers.count > 0 ? headers : zs_httpHeaders,
+                   contentType: contentType.count > 0 ? contentType : zs_contentType,
                    completion: completion)
     }
 }
