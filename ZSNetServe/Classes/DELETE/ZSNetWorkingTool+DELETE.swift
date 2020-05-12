@@ -22,7 +22,7 @@ public extension ZSNetWorkingTool {
                                   completion: (ZSCompletion<ResultType>)?) {
         
         DELETE(url,
-               path: "",
+               path: path,
                completion: completion)
     }
     

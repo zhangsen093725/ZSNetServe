@@ -22,7 +22,7 @@ public extension ZSNetWorkingTool {
                                completion: (ZSCompletion<ResultType>)?) {
         
         GET(url,
-            path: "",
+            path: path,
             parameters: parameters,
             completion: completion)
     }

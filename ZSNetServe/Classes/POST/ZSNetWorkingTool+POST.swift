@@ -22,7 +22,7 @@ public extension ZSNetWorkingTool {
                                 completion: (ZSCompletion<ResultType>)?) {
         
         POST(url,
-             path: "",
+             path: path,
              parameters: parameters,
              completion: completion)
     }
