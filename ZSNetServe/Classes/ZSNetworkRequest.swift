@@ -10,6 +10,11 @@ import Alamofire
 
 open class ZSNetworkRequest: NSObject {
     
+    @objc class open var config: ZSNetworkConfigure.Type {
+        
+        return ZSNetworkConfigure.self
+    }
+    
     public static let `default`: Session = Alamofire.Session.default
     
     /// 网络请求
@@ -35,21 +40,21 @@ open class ZSNetworkRequest: NSObject {
         completion: (ZSNetworkConfigure.ZSCompletion<ResultType>)? = nil) {
         
         
-        let _contentType = contentType == nil ? ZSNetworkConfigure.zs_contentType : contentType!
+        let _contentType = contentType == nil ? config.zs_contentType : contentType!
         
-        var httpContentType = ZSNetworkConfigure.zs_defultContentType
+        var httpContentType = config.zs_defultContentType
         httpContentType  = httpContentType.union(_contentType)
         
-        let _response = response == nil ? ZSNetworkConfigure.zs_responseEncoding : response!
+        let _response = response == nil ? config.zs_responseEncoding : response!
         
-        let _timeOut = timeOut == nil ? ZSNetworkConfigure.zs_timeOut : timeOut!
+        let _timeOut = timeOut == nil ? config.zs_timeOut : timeOut!
         
-        let requestEncoding = encoding == nil ? ZSNetworkConfigure.zs_requestEncoding : encoding!
-        let _encoding = ZSNetworkConfigure.zs_parameterEncoding(encoding: requestEncoding)
+        let requestEncoding = encoding == nil ? config.zs_requestEncoding : encoding!
+        let _encoding = config.zs_parameterEncoding(encoding: requestEncoding)
         
-        var httpHeaders = ZSNetworkConfigure.zs_defaultHTTPHeaders
+        var httpHeaders = config.zs_defaultHTTPHeaders
         
-        let _header = headers == nil ? ZSNetworkConfigure.zs_httpHeaders : headers!
+        let _header = headers == nil ? config.zs_httpHeaders : headers!
         _header.forEach { httpHeaders.add(name: $0.key, value: $0.value) }
         
         
@@ -106,7 +111,7 @@ open class ZSNetworkRequest: NSObject {
                    path: path,
                    parameters: parameters,
                    timeOut: timeOut,
-                   method: ZSNetworkConfigure.zs_method(method),
+                   method: config.zs_method(method),
                    encoding: encoding,
                    response: response,
                    headers: headers,
@@ -133,7 +138,7 @@ open class ZSNetworkRequest: NSObject {
                fileKey: fileKey,
                mimeType: mimeType,
                parameters: parameters,
-               method: ZSNetworkConfigure.zs_method(method),
+               method: config.zs_method(method),
                headers: _headers_,
                progress: progress,
                completion: completion)
@@ -157,7 +162,7 @@ open class ZSNetworkRequest: NSObject {
                to: path,
                fileKey: fileKey,
                parameters: parameters,
-               method: ZSNetworkConfigure.zs_method(method),
+               method: config.zs_method(method),
                headers: _headers_,
                progress: progress,
                completion: completion)
