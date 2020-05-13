@@ -10,68 +10,76 @@
 		003B9FC9E937C82635CF68E9E3576B52 /* URLRequest+Alamofire.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23C7FB72F8473B30B3465BEBEA6532E6 /* URLRequest+Alamofire.swift */; };
 		019DFE41B4D93CA273F9DB7574ADC56E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3F401E181BEA002337E464DED414F440 /* Foundation.framework */; };
 		08281777D479CF46F0E0F24753E01A63 /* Request.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86CCD149177759B53BAA3CEDB2B56F09 /* Request.swift */; };
-		0A19ADDCC1C39E03FB0848422A8C08C5 /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D0FF301302A2A77E95697F2B5692FA5E /* Alamofire.framework */; };
-		0FC96A8105F7EB5964ACA0576D032315 /* ZSNetWorkingTool+GET.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27F096CB5E3AD656E465A38157D834CE /* ZSNetWorkingTool+GET.swift */; };
+		0B559B8A8247D8A6465385B4CAD9AF9B /* Reachability.m in Sources */ = {isa = PBXBuildFile; fileRef = D55AACF52BAEA09DF9AA3D76B3366979 /* Reachability.m */; };
+		0D0CD19F915FBD52EDB5F2D8911B828F /* ZSNetServe-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C794280B63E5E1CDD02A2448C8CA08D /* ZSNetServe-dummy.m */; };
 		0FF6A3BBA9E9DAAE2E741513546FC4B6 /* Validation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48ADD54A33EF3F4AE3B3770B1B9DBDB5 /* Validation.swift */; };
 		165F498AB8762893E957BCE0D70F4439 /* AFError.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC50116D30A9780481EE2214725C8495 /* AFError.swift */; };
 		1A3BF3828F8948C2A2561418BC718F3A /* Pods-ZSNetServe_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = B500EE81E8C05B90ACCD2B994C9BE2C4 /* Pods-ZSNetServe_Tests-dummy.m */; };
 		1CE8BDA6C86345FD31F42F3AECB375EA /* NetworkReachabilityManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65279C5FE5EE7912B520429668FD6AC0 /* NetworkReachabilityManager.swift */; };
 		2933B39BFCEF204A508F4FFF3188AD27 /* URLSessionConfiguration+Alamofire.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD992E914E27E73FF087E56F06F14663 /* URLSessionConfiguration+Alamofire.swift */; };
+		297E85ABFD39E4412A69727936F9DCB3 /* ZSRequestConfigure.swift in Sources */ = {isa = PBXBuildFile; fileRef = B07D6E2DA69CDFD044738D6E31F67F98 /* ZSRequestConfigure.swift */; };
+		29AF208D455B39638A831A8905113138 /* ZSResponseConfigure.swift in Sources */ = {isa = PBXBuildFile; fileRef = E42F3DD164FD9C47830FE8F8BBB23370 /* ZSResponseConfigure.swift */; };
 		2BC73DE30871EA6F7D9F600D50F11726 /* Alamofire-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = A256DD386F8A64E70937D173CA003A5B /* Alamofire-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		2BE0DE689754A1603251EB331450718E /* ParameterEncoder.swift in Sources */ = {isa = PBXBuildFile; fileRef = E31F740DB7630AD2EDA71005D5C2D285 /* ParameterEncoder.swift */; };
 		37A2FCD24ED22C8D670188930CE4CA5D /* RequestTaskMap.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BF53DA4B90203AC1F38EFC48C2E121F /* RequestTaskMap.swift */; };
-		37C21BF041345B70DC8BDDD77E093D9B /* ZSNetWorkingTool.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83872EA4803F28BF5595C5E5E10EA21E /* ZSNetWorkingTool.swift */; };
 		408258CCC9DF9A5BD371EBEC8286CD81 /* RetryPolicy.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8DC39DD1C21E95EC4C2DB4053B34EF1 /* RetryPolicy.swift */; };
+		425747C73DDBC66C59CD45006FDD95F5 /* ZSHeadRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A7972399303AE5192520612C1610AB1 /* ZSHeadRequest.swift */; };
 		433815428539A3F818A385B0EFEFB8DC /* DispatchQueue+Alamofire.swift in Sources */ = {isa = PBXBuildFile; fileRef = C780FB62533DE088ACF334F51D740F2B /* DispatchQueue+Alamofire.swift */; };
 		4AAB3F2054BD0939C95D961A3BAA43B4 /* ParameterEncoding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3799DFCC7C762ADF5BA2044F367ED220 /* ParameterEncoding.swift */; };
-		4DD703ACDDC15B78DD58BC367D7BE7F2 /* ZSNetServe-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 0AFF8BB411D93B0BB10F493CFA1167D6 /* ZSNetServe-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		4F2E77C2EF210AA860C5F2A8A91ADE34 /* Reachability.h in Headers */ = {isa = PBXBuildFile; fileRef = E1467173EA6163D6C47CEED3B733C2A0 /* Reachability.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		4F767680534EDD5E80E526C3D76989B2 /* Alamofire-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 109C51480CE41D94CAB4C694BF776E7D /* Alamofire-dummy.m */; };
-		54321C6D81D0B6B0F53906692FDBE263 /* ZSNetWorkingTool+POST.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04D000C40E8EFAE18A3093FD81355174 /* ZSNetWorkingTool+POST.swift */; };
 		543FF1D8EE33F8C1136EB945CDF2A3E2 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 32BD7B93FEA70BDFD057550D07FA7961 /* CFNetwork.framework */; };
-		57491B63205A613EDE592B53AA4A424F /* ZSNetWorkingTool+OPTION.swift in Sources */ = {isa = PBXBuildFile; fileRef = E45E32DBB8F30FBEFCAC89CBFB848B78 /* ZSNetWorkingTool+OPTION.swift */; };
+		54572370CFB7EC38B2E8AE886A91748F /* ZSOptionRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A9986FE6D6BCD00D0C53FF25967E152 /* ZSOptionRequest.swift */; };
 		57B60987700B37698F1C9996AF526AD5 /* ServerTrustEvaluation.swift in Sources */ = {isa = PBXBuildFile; fileRef = B91D230E4213198770CCC579C06DAA3F /* ServerTrustEvaluation.swift */; };
-		5A17B6BDF0F97366A731EC9937F68AB6 /* ZSNetWorkingTool+CONNECT.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E400C93EE83BF81D38E5DABEFC44615 /* ZSNetWorkingTool+CONNECT.swift */; };
 		60D4B28D45B4164E21715CF68D1E239B /* Notifications.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36C7B4B1BD96AF75CF7B0954B8D9DAFE /* Notifications.swift */; };
 		680CEBAC8121FFB4A04535D1A924E72C /* Pods-ZSNetServe_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 42DF531AA4FB6513B45B7575AF8CB288 /* Pods-ZSNetServe_Example-dummy.m */; };
 		6C8EC166C81EB4E72450A002224658DC /* HTTPMethod.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DDE162673EECB6A7517E39350B64751 /* HTTPMethod.swift */; };
+		6E4FB4B302EED496ABEB63E209E327DC /* ZSNetworkConfigure.swift in Sources */ = {isa = PBXBuildFile; fileRef = 763F2B6F01A58DA4E8A1F2E84E84051B /* ZSNetworkConfigure.swift */; };
 		7340F56DBBE06E4D4C2C8B3E8203C0E3 /* Pods-ZSNetServe_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = C999D74A4913359EC632999DBB0AAB57 /* Pods-ZSNetServe_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		79D14648571B22DA261B3917240958C9 /* ZSPostRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60CE9805B11DA186E7282B2D36D8A6ED /* ZSPostRequest.swift */; };
+		7C686C8241912A0734855CAA9CE78376 /* ZSNetworkRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 562007D060CE793658E35A62CE419547 /* ZSNetworkRequest.swift */; };
 		80DBE8FF4DFE41CB54687CAB6A29F1B3 /* StringEncoding+Alamofire.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5C58FED748ABE1542553715F54CE49A /* StringEncoding+Alamofire.swift */; };
+		83D2CBF50D8E5BF6D5045BC6BDE43620 /* ZSConnectRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 217601F2D8E995871867BF7E38CBF7E1 /* ZSConnectRequest.swift */; };
 		85E10F2E2F0044C1ACE78F76395F9077 /* HTTPHeaders.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3662392B4DFF0B96F733825F053230C0 /* HTTPHeaders.swift */; };
-		8CB6DE6AF419F203FD84F5DCAB09A89F /* ZSNetWorkingTool+Request.swift in Sources */ = {isa = PBXBuildFile; fileRef = F508DD924400A3DD7AA3CF651B349362 /* ZSNetWorkingTool+Request.swift */; };
+		87EA9B4D49B1A937F237849C092AC080 /* ZSNetServe-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 0A29EF6216DE016531E1A765E793F4AA /* ZSNetServe-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8D19380B0F89DCA658ADC3CB89E4E910 /* ZSUploadRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 693B979A284419CB3FF2FB2FDFEAD239 /* ZSUploadRequest.swift */; };
+		9143152E2BCF3FA3A4EEBD7B1AAABC9A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3F401E181BEA002337E464DED414F440 /* Foundation.framework */; };
 		918548CAAC87215B4960B1F4D2A71769 /* MultipartUpload.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8D57B2A728D4EBEB1B9081A24940EB4 /* MultipartUpload.swift */; };
+		921D56D20CF2F6E39D4C62C3A34FB316 /* ZSPutRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F36D5052F98915AB31FBCC66ECF6ABF /* ZSPutRequest.swift */; };
 		964030107A87D7C1B25628B02C0E563F /* SessionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C5CA2C8C4F5971D71871F914DB43A82 /* SessionDelegate.swift */; };
 		9DC4A6FCE96D312A9EE0E5D51B4D4A80 /* URLEncodedFormEncoder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69B6893771F1758D0DB9B727F542C063 /* URLEncodedFormEncoder.swift */; };
 		AA8023C0CFE561DB8B8D92232C6125B1 /* AlamofireExtended.swift in Sources */ = {isa = PBXBuildFile; fileRef = 888381E78F8C63B273845DB5A7FF412A /* AlamofireExtended.swift */; };
 		AAE822224E085A6362FA7122C0605078 /* RedirectHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = D58AC957683D29DA8E7174023DF6AF41 /* RedirectHandler.swift */; };
-		AC43B59992B0D8C2A3A261F04194D3ED /* ZSNetServe-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = E759C2ECC918AC1D68A0EA22047B22E2 /* ZSNetServe-dummy.m */; };
-		ADD1415CB0BD42726B81376B12D0BD1B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3F401E181BEA002337E464DED414F440 /* Foundation.framework */; };
+		AF1C4F59D9A888A6B30A20571AE15907 /* ZSDownloadRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3F226F7588156021237A9E138A2828D /* ZSDownloadRequest.swift */; };
 		B2047F988C61D368E76A806D5227329E /* ResponseSerialization.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6799710225E6EF0A7535CF49667B98C /* ResponseSerialization.swift */; };
-		B55566866F4B27EA46A5CB93EC00A0D0 /* ZSNetWorkingTool+HEAD.swift in Sources */ = {isa = PBXBuildFile; fileRef = B69560A9BE0D36FC7C655B1E6CB2BA66 /* ZSNetWorkingTool+HEAD.swift */; };
-		B6DA1A8910E5F8EB2445985B74EED2DF /* Reachability.m in Sources */ = {isa = PBXBuildFile; fileRef = BDB0E723F4046F9CF2DF9183405F44CC /* Reachability.m */; };
-		C5AED3AA547911C00E5F055B0A1149C4 /* ZSNetWorkingTool+Response.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6E1BDAB02D80F9560AD5C7CCA3B4A66 /* ZSNetWorkingTool+Response.swift */; };
+		C2EF23E7DFFBF42EED86C681FC799C77 /* ZSNetWorkStatus.swift in Sources */ = {isa = PBXBuildFile; fileRef = 265447CFC9764F405499244A946C6D7D /* ZSNetWorkStatus.swift */; };
 		C66E2AAB07C4686F5B23EBAEC9B4029A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3F401E181BEA002337E464DED414F440 /* Foundation.framework */; };
-		C90B6DC6F1FFB76DA48974435668FD82 /* ZSNetWorkStatus.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2260FBC48634164EA013B25EA55FD27 /* ZSNetWorkStatus.swift */; };
 		CB436452F5C36FC049E26A8C0475965C /* Result+Alamofire.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6554B31DBB3D5BE815F93AE863722D6 /* Result+Alamofire.swift */; };
 		CDCDB8A355FE70F12855CC8A3657E739 /* URLConvertible+URLRequestConvertible.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB3477DE674C12EBC7A36718D125D445 /* URLConvertible+URLRequestConvertible.swift */; };
 		D0F6D13D0DC583351F5F6BCA1CB04ABD /* Protected.swift in Sources */ = {isa = PBXBuildFile; fileRef = D163099FB2DC17A8CAF7CF7B4E106626 /* Protected.swift */; };
+		D600F247D33294EB00F7E54FF5273DAD /* Reachability.h in Headers */ = {isa = PBXBuildFile; fileRef = F81A2020AC5BA4123546FB0CAEAA51F1 /* Reachability.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D7727994DE4BA54C84226312B599A52B /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D0FF301302A2A77E95697F2B5692FA5E /* Alamofire.framework */; };
+		D7C215B7C09B572DDB37BF2F89FD2280 /* ZSGetRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E6486EE0ECAD28A22E6311E84CBCF53 /* ZSGetRequest.swift */; };
 		DA07C0CDF1B0FBC959A4406DE142A081 /* EventMonitor.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0EA86DF94467AE5E04E83CBE2F4D3F8 /* EventMonitor.swift */; };
 		DA6512AAAFD92EFA9860ED84C3A308B9 /* Alamofire.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83F04D2E35152A5E1DEA7C9F7C2FA40D /* Alamofire.swift */; };
 		DAB8212EC3F4FB2B270929D13B40CE91 /* Pods-ZSNetServe_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 5242DCC9C36EA6819ACC7020A92F93E8 /* Pods-ZSNetServe_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		DB9031BFA2DE042B37D655048BD59A7B /* ZSNetWorkingTool+PUT.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62AAFF2C07FCDBB6AF27D759FB805CDA /* ZSNetWorkingTool+PUT.swift */; };
 		DDA3EF3B4A1D99E1E4AB016CFC1B544D /* RequestInterceptor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 565399DDB29C42E8E5725CD46DEA63D1 /* RequestInterceptor.swift */; };
-		DEC54AC8EBA2375727A6CD986BC2E569 /* ZSNetWorkingTool+DELETE.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5D20EA48059DABD18DE55BF7EFFF0FA /* ZSNetWorkingTool+DELETE.swift */; };
 		DF22F9B2C3640931D82769C9E4707929 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3F401E181BEA002337E464DED414F440 /* Foundation.framework */; };
 		E4E727DD13DA225D574D9880D9CB7348 /* CachedResponseHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59FC26DADED472D6F9C4402C01D56DEC /* CachedResponseHandler.swift */; };
 		E618A89E126F408A59FE3167A6CBB510 /* OperationQueue+Alamofire.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF990D3249B0037F3100CC450020BE68 /* OperationQueue+Alamofire.swift */; };
+		ECD8F82013068C69DF77C5EE4E4FC455 /* ZSDeleteRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D1626330FEB501FA211CE2CC485971E /* ZSDeleteRequest.swift */; };
 		EE1F347816E69DB6AB8513488D9D08FF /* Session.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F05DA6A2EE406E4AEA37F4F1894FF81 /* Session.swift */; };
 		EE5FCC4133C3E712B85676510F2A3D7B /* Response.swift in Sources */ = {isa = PBXBuildFile; fileRef = B30FDFB4547BAABACF2A2B0CAAC7AE8A /* Response.swift */; };
-		F15B4A3B64F877EF4656C68BFD500F63 /* ZSNetWorkingTool+Upload.swift in Sources */ = {isa = PBXBuildFile; fileRef = E35AA63FAFB787FD53465E3B608DBE3A /* ZSNetWorkingTool+Upload.swift */; };
-		F3276E3A7F16BCE02A9B7D2E26ABFC68 /* ZSNetWorkingTool+Download.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E6B9ABD4C5B4E3CEE0452C3F6AB0329 /* ZSNetWorkingTool+Download.swift */; };
 		F5E436F5E8C598430FABC8787E517F96 /* MultipartFormData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6EAD7421AE4CA30C9393AB889065D8CD /* MultipartFormData.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		2CF155AA314F0A793E75F5758AA89716 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = EAAA1AD3A8A1B59AB91319EE40752C6D;
+			remoteInfo = Alamofire;
+		};
 		5E1D013AB5D7EC345B10AF4DF4CD049E /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
@@ -93,84 +101,83 @@
 			remoteGlobalIDString = EAAA1AD3A8A1B59AB91319EE40752C6D;
 			remoteInfo = Alamofire;
 		};
-		E4B10F0912011B4D3E0CBD06C88711C8 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = EAAA1AD3A8A1B59AB91319EE40752C6D;
-			remoteInfo = Alamofire;
-		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		037F2C340FF5B3DD5454329338E5284E /* ZSNetServe.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = ZSNetServe.release.xcconfig; sourceTree = "<group>"; };
 		042A565B6F20E3E05326226A4AE333A2 /* Alamofire-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Alamofire-prefix.pch"; sourceTree = "<group>"; };
-		04D000C40E8EFAE18A3093FD81355174 /* ZSNetWorkingTool+POST.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "ZSNetWorkingTool+POST.swift"; sourceTree = "<group>"; };
-		0AFF8BB411D93B0BB10F493CFA1167D6 /* ZSNetServe-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "ZSNetServe-umbrella.h"; sourceTree = "<group>"; };
-		0E400C93EE83BF81D38E5DABEFC44615 /* ZSNetWorkingTool+CONNECT.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "ZSNetWorkingTool+CONNECT.swift"; sourceTree = "<group>"; };
+		0A29EF6216DE016531E1A765E793F4AA /* ZSNetServe-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "ZSNetServe-umbrella.h"; sourceTree = "<group>"; };
 		109C51480CE41D94CAB4C694BF776E7D /* Alamofire-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Alamofire-dummy.m"; sourceTree = "<group>"; };
 		127DEAD8197024704ACB64E8F2C49298 /* Pods-ZSNetServe_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-ZSNetServe_Example.modulemap"; sourceTree = "<group>"; };
 		140C292ED548163707D69EFD58893347 /* Pods-ZSNetServe_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-ZSNetServe_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
-		1A27DED39486FA90C427CBBF85ABFEEB /* ZSNetServe.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = ZSNetServe.debug.xcconfig; sourceTree = "<group>"; };
+		217601F2D8E995871867BF7E38CBF7E1 /* ZSConnectRequest.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ZSConnectRequest.swift; sourceTree = "<group>"; };
 		233C0F2AA20C8BEB18D2E8D96180AA17 /* Pods-ZSNetServe_Tests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-ZSNetServe_Tests-Info.plist"; sourceTree = "<group>"; };
 		23C7FB72F8473B30B3465BEBEA6532E6 /* URLRequest+Alamofire.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "URLRequest+Alamofire.swift"; path = "Source/URLRequest+Alamofire.swift"; sourceTree = "<group>"; };
 		249F888B33A13F93AF84F77E7FFC7604 /* Alamofire.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Alamofire.release.xcconfig; sourceTree = "<group>"; };
-		27F096CB5E3AD656E465A38157D834CE /* ZSNetWorkingTool+GET.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "ZSNetWorkingTool+GET.swift"; sourceTree = "<group>"; };
+		24C72661063DBD78707C04FDA50DB373 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		265447CFC9764F405499244A946C6D7D /* ZSNetWorkStatus.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ZSNetWorkStatus.swift; sourceTree = "<group>"; };
 		28332472A67AC747149F339263DFB7B1 /* Pods-ZSNetServe_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-ZSNetServe_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
-		29314B49B9C7B41CD836A36AAF552A9C /* ZSNetServe.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = ZSNetServe.modulemap; sourceTree = "<group>"; };
+		2A7972399303AE5192520612C1610AB1 /* ZSHeadRequest.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ZSHeadRequest.swift; sourceTree = "<group>"; };
 		2BF53DA4B90203AC1F38EFC48C2E121F /* RequestTaskMap.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RequestTaskMap.swift; path = Source/RequestTaskMap.swift; sourceTree = "<group>"; };
 		2DDE162673EECB6A7517E39350B64751 /* HTTPMethod.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = HTTPMethod.swift; path = Source/HTTPMethod.swift; sourceTree = "<group>"; };
+		2F36D5052F98915AB31FBCC66ECF6ABF /* ZSPutRequest.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ZSPutRequest.swift; sourceTree = "<group>"; };
 		30FC3A81B796B688C06FC094C264AFC9 /* Pods-ZSNetServe_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ZSNetServe_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		32BD7B93FEA70BDFD057550D07FA7961 /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/CFNetwork.framework; sourceTree = DEVELOPER_DIR; };
+		353D79B3CE41DBDE8A085F570FAFBF75 /* ZSNetServe.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = ZSNetServe.debug.xcconfig; sourceTree = "<group>"; };
 		3662392B4DFF0B96F733825F053230C0 /* HTTPHeaders.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = HTTPHeaders.swift; path = Source/HTTPHeaders.swift; sourceTree = "<group>"; };
 		36C7B4B1BD96AF75CF7B0954B8D9DAFE /* Notifications.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Notifications.swift; path = Source/Notifications.swift; sourceTree = "<group>"; };
 		36EC68183CA3443A25F97B15A8F8AB68 /* Pods-ZSNetServe_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-ZSNetServe_Example-acknowledgements.plist"; sourceTree = "<group>"; };
 		3799DFCC7C762ADF5BA2044F367ED220 /* ParameterEncoding.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ParameterEncoding.swift; path = Source/ParameterEncoding.swift; sourceTree = "<group>"; };
+		3D1626330FEB501FA211CE2CC485971E /* ZSDeleteRequest.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ZSDeleteRequest.swift; sourceTree = "<group>"; };
+		3E6486EE0ECAD28A22E6311E84CBCF53 /* ZSGetRequest.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ZSGetRequest.swift; sourceTree = "<group>"; };
 		3F05DA6A2EE406E4AEA37F4F1894FF81 /* Session.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Session.swift; path = Source/Session.swift; sourceTree = "<group>"; };
 		3F401E181BEA002337E464DED414F440 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 		42DF531AA4FB6513B45B7575AF8CB288 /* Pods-ZSNetServe_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-ZSNetServe_Example-dummy.m"; sourceTree = "<group>"; };
-		45AAA59DF0F17119F9CF00BA7E829977 /* Pods_ZSNetServe_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_ZSNetServe_Tests.framework; path = "Pods-ZSNetServe_Tests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		45AAA59DF0F17119F9CF00BA7E829977 /* Pods_ZSNetServe_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ZSNetServe_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		48ADD54A33EF3F4AE3B3770B1B9DBDB5 /* Validation.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Validation.swift; path = Source/Validation.swift; sourceTree = "<group>"; };
 		4ED62D72D4C639C1C1EB5DC8FC853872 /* Pods-ZSNetServe_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-ZSNetServe_Example-frameworks.sh"; sourceTree = "<group>"; };
-		51D97AC7BA8AA40F540F19D8E0568CD6 /* Pods_ZSNetServe_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_ZSNetServe_Example.framework; path = "Pods-ZSNetServe_Example.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		51D97AC7BA8AA40F540F19D8E0568CD6 /* Pods_ZSNetServe_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ZSNetServe_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		5242DCC9C36EA6819ACC7020A92F93E8 /* Pods-ZSNetServe_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-ZSNetServe_Example-umbrella.h"; sourceTree = "<group>"; };
+		562007D060CE793658E35A62CE419547 /* ZSNetworkRequest.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ZSNetworkRequest.swift; path = ZSNetServe/Classes/ZSNetworkRequest.swift; sourceTree = "<group>"; };
 		565399DDB29C42E8E5725CD46DEA63D1 /* RequestInterceptor.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RequestInterceptor.swift; path = Source/RequestInterceptor.swift; sourceTree = "<group>"; };
 		59FC26DADED472D6F9C4402C01D56DEC /* CachedResponseHandler.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CachedResponseHandler.swift; path = Source/CachedResponseHandler.swift; sourceTree = "<group>"; };
-		5D797E9A5C5782CE845840781FA1CC81 /* Alamofire.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Alamofire.framework; path = Alamofire.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		5E6B9ABD4C5B4E3CEE0452C3F6AB0329 /* ZSNetWorkingTool+Download.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "ZSNetWorkingTool+Download.swift"; sourceTree = "<group>"; };
-		5E8E8A983CE5B3E731D2F8B864F884A0 /* ZSNetServe-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "ZSNetServe-prefix.pch"; sourceTree = "<group>"; };
+		5D797E9A5C5782CE845840781FA1CC81 /* Alamofire.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Alamofire.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		5FBDE18A7BF5B5EF125B6EE474F7D4A1 /* Pods-ZSNetServe_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-ZSNetServe_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
+		60CE9805B11DA186E7282B2D36D8A6ED /* ZSPostRequest.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ZSPostRequest.swift; sourceTree = "<group>"; };
 		6247C53C16069E3F79A1F7363A3AA0A3 /* Alamofire.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Alamofire.debug.xcconfig; sourceTree = "<group>"; };
 		627B21FF25C9B778CA87BC2C1D574FBA /* Pods-ZSNetServe_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-ZSNetServe_Tests.modulemap"; sourceTree = "<group>"; };
-		62AAFF2C07FCDBB6AF27D759FB805CDA /* ZSNetWorkingTool+PUT.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "ZSNetWorkingTool+PUT.swift"; sourceTree = "<group>"; };
+		64DD4AB51CD3C91803D81B008C8177A3 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
 		65279C5FE5EE7912B520429668FD6AC0 /* NetworkReachabilityManager.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NetworkReachabilityManager.swift; path = Source/NetworkReachabilityManager.swift; sourceTree = "<group>"; };
+		693B979A284419CB3FF2FB2FDFEAD239 /* ZSUploadRequest.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ZSUploadRequest.swift; sourceTree = "<group>"; };
 		69B6893771F1758D0DB9B727F542C063 /* URLEncodedFormEncoder.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = URLEncodedFormEncoder.swift; path = Source/URLEncodedFormEncoder.swift; sourceTree = "<group>"; };
 		6EAD7421AE4CA30C9393AB889065D8CD /* MultipartFormData.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MultipartFormData.swift; path = Source/MultipartFormData.swift; sourceTree = "<group>"; };
+		6F820186B7956DE49129FEB23BEB4EB8 /* ZSNetServe-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "ZSNetServe-prefix.pch"; sourceTree = "<group>"; };
+		763F2B6F01A58DA4E8A1F2E84E84051B /* ZSNetworkConfigure.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ZSNetworkConfigure.swift; path = ZSNetServe/Classes/ZSNetworkConfigure.swift; sourceTree = "<group>"; };
 		7C5CA2C8C4F5971D71871F914DB43A82 /* SessionDelegate.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SessionDelegate.swift; path = Source/SessionDelegate.swift; sourceTree = "<group>"; };
-		83872EA4803F28BF5595C5E5E10EA21E /* ZSNetWorkingTool.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ZSNetWorkingTool.swift; path = ZSNetServe/Classes/ZSNetWorkingTool.swift; sourceTree = "<group>"; };
 		83F04D2E35152A5E1DEA7C9F7C2FA40D /* Alamofire.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Alamofire.swift; path = Source/Alamofire.swift; sourceTree = "<group>"; };
 		86CCD149177759B53BAA3CEDB2B56F09 /* Request.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Request.swift; path = Source/Request.swift; sourceTree = "<group>"; };
 		888381E78F8C63B273845DB5A7FF412A /* AlamofireExtended.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AlamofireExtended.swift; path = Source/AlamofireExtended.swift; sourceTree = "<group>"; };
+		8C794280B63E5E1CDD02A2448C8CA08D /* ZSNetServe-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "ZSNetServe-dummy.m"; sourceTree = "<group>"; };
 		8F8479935A00CD340FC20C948C1D7D09 /* Pods-ZSNetServe_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ZSNetServe_Tests.debug.xcconfig"; sourceTree = "<group>"; };
-		94DC904E92E94F4F45D63DA35C60F117 /* ZSNetServe.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; path = ZSNetServe.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		93C73673DC2D93BE23CA927766C8FCF1 /* ZSNetServe.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = ZSNetServe.release.xcconfig; sourceTree = "<group>"; };
+		94AB4A9DC19F77248A44B8E4A93C5535 /* ZSNetServe.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = ZSNetServe.modulemap; sourceTree = "<group>"; };
 		9509A98A0E21D62B28BB7EBD446C30EB /* Alamofire.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = Alamofire.modulemap; sourceTree = "<group>"; };
 		9541F69680EE11375F6504DA40123AF0 /* Pods-ZSNetServe_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ZSNetServe_Example.release.xcconfig"; sourceTree = "<group>"; };
 		9970CA46082D03859C5E54D87D016474 /* Pods-ZSNetServe_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ZSNetServe_Tests.release.xcconfig"; sourceTree = "<group>"; };
-		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		9A9986FE6D6BCD00D0C53FF25967E152 /* ZSOptionRequest.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ZSOptionRequest.swift; sourceTree = "<group>"; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		A256DD386F8A64E70937D173CA003A5B /* Alamofire-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Alamofire-umbrella.h"; sourceTree = "<group>"; };
+		A2B58489AD973EDB9732AD5007B0A66B /* ZSNetServe.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; path = ZSNetServe.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		A3F226F7588156021237A9E138A2828D /* ZSDownloadRequest.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ZSDownloadRequest.swift; sourceTree = "<group>"; };
 		A5C58FED748ABE1542553715F54CE49A /* StringEncoding+Alamofire.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "StringEncoding+Alamofire.swift"; path = "Source/StringEncoding+Alamofire.swift"; sourceTree = "<group>"; };
-		A6E1BDAB02D80F9560AD5C7CCA3B4A66 /* ZSNetWorkingTool+Response.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "ZSNetWorkingTool+Response.swift"; path = "ZSNetServe/Classes/ZSNetWorkingTool+Response.swift"; sourceTree = "<group>"; };
 		AC50116D30A9780481EE2214725C8495 /* AFError.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AFError.swift; path = Source/AFError.swift; sourceTree = "<group>"; };
+		B07D6E2DA69CDFD044738D6E31F67F98 /* ZSRequestConfigure.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ZSRequestConfigure.swift; path = ZSNetServe/Classes/ZSRequestConfigure.swift; sourceTree = "<group>"; };
 		B30FDFB4547BAABACF2A2B0CAAC7AE8A /* Response.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Response.swift; path = Source/Response.swift; sourceTree = "<group>"; };
 		B500EE81E8C05B90ACCD2B994C9BE2C4 /* Pods-ZSNetServe_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-ZSNetServe_Tests-dummy.m"; sourceTree = "<group>"; };
-		B69560A9BE0D36FC7C655B1E6CB2BA66 /* ZSNetWorkingTool+HEAD.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "ZSNetWorkingTool+HEAD.swift"; sourceTree = "<group>"; };
 		B91D230E4213198770CCC579C06DAA3F /* ServerTrustEvaluation.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ServerTrustEvaluation.swift; path = Source/ServerTrustEvaluation.swift; sourceTree = "<group>"; };
+		BD78113098630A54D1305D1FF406D881 /* ZSNetServe-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "ZSNetServe-Info.plist"; sourceTree = "<group>"; };
 		BD992E914E27E73FF087E56F06F14663 /* URLSessionConfiguration+Alamofire.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "URLSessionConfiguration+Alamofire.swift"; path = "Source/URLSessionConfiguration+Alamofire.swift"; sourceTree = "<group>"; };
-		BDB0E723F4046F9CF2DF9183405F44CC /* Reachability.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = Reachability.m; sourceTree = "<group>"; };
 		BF990D3249B0037F3100CC450020BE68 /* OperationQueue+Alamofire.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "OperationQueue+Alamofire.swift"; path = "Source/OperationQueue+Alamofire.swift"; sourceTree = "<group>"; };
-		C1A85A2D4DA0061D0EEFF6A6795674DA /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
 		C2732710F20ABA1F455F67F012FC336F /* Alamofire-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Alamofire-Info.plist"; sourceTree = "<group>"; };
-		C3A7AEA42C3F41354EF469BD93EF9AE2 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
 		C6799710225E6EF0A7535CF49667B98C /* ResponseSerialization.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ResponseSerialization.swift; path = Source/ResponseSerialization.swift; sourceTree = "<group>"; };
 		C780FB62533DE088ACF334F51D740F2B /* DispatchQueue+Alamofire.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "DispatchQueue+Alamofire.swift"; path = "Source/DispatchQueue+Alamofire.swift"; sourceTree = "<group>"; };
 		C7EE0C9BDB7826D1CD6345EFAE8E09FD /* Pods-ZSNetServe_Example-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-ZSNetServe_Example-Info.plist"; sourceTree = "<group>"; };
@@ -179,32 +186,18 @@
 		C999D74A4913359EC632999DBB0AAB57 /* Pods-ZSNetServe_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-ZSNetServe_Tests-umbrella.h"; sourceTree = "<group>"; };
 		D0FF301302A2A77E95697F2B5692FA5E /* Alamofire.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Alamofire.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D163099FB2DC17A8CAF7CF7B4E106626 /* Protected.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Protected.swift; path = Source/Protected.swift; sourceTree = "<group>"; };
+		D55AACF52BAEA09DF9AA3D76B3366979 /* Reachability.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = Reachability.m; sourceTree = "<group>"; };
 		D58AC957683D29DA8E7174023DF6AF41 /* RedirectHandler.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RedirectHandler.swift; path = Source/RedirectHandler.swift; sourceTree = "<group>"; };
-		D5D20EA48059DABD18DE55BF7EFFF0FA /* ZSNetWorkingTool+DELETE.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "ZSNetWorkingTool+DELETE.swift"; sourceTree = "<group>"; };
 		D6554B31DBB3D5BE815F93AE863722D6 /* Result+Alamofire.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Result+Alamofire.swift"; path = "Source/Result+Alamofire.swift"; sourceTree = "<group>"; };
-		E1467173EA6163D6C47CEED3B733C2A0 /* Reachability.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = Reachability.h; sourceTree = "<group>"; };
 		E31F740DB7630AD2EDA71005D5C2D285 /* ParameterEncoder.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ParameterEncoder.swift; path = Source/ParameterEncoder.swift; sourceTree = "<group>"; };
-		E35AA63FAFB787FD53465E3B608DBE3A /* ZSNetWorkingTool+Upload.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "ZSNetWorkingTool+Upload.swift"; sourceTree = "<group>"; };
-		E45E32DBB8F30FBEFCAC89CBFB848B78 /* ZSNetWorkingTool+OPTION.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "ZSNetWorkingTool+OPTION.swift"; sourceTree = "<group>"; };
-		E62CB367B77B7699C3B997B007E8AF71 /* ZSNetServe.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = ZSNetServe.framework; path = ZSNetServe.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		E759C2ECC918AC1D68A0EA22047B22E2 /* ZSNetServe-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "ZSNetServe-dummy.m"; sourceTree = "<group>"; };
+		E42F3DD164FD9C47830FE8F8BBB23370 /* ZSResponseConfigure.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ZSResponseConfigure.swift; path = ZSNetServe/Classes/ZSResponseConfigure.swift; sourceTree = "<group>"; };
+		E62CB367B77B7699C3B997B007E8AF71 /* ZSNetServe.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ZSNetServe.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F0EA86DF94467AE5E04E83CBE2F4D3F8 /* EventMonitor.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = EventMonitor.swift; path = Source/EventMonitor.swift; sourceTree = "<group>"; };
-		F2260FBC48634164EA013B25EA55FD27 /* ZSNetWorkStatus.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ZSNetWorkStatus.swift; sourceTree = "<group>"; };
-		F3A52E3F48838813DD25AF956E79149F /* ZSNetServe-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "ZSNetServe-Info.plist"; sourceTree = "<group>"; };
-		F508DD924400A3DD7AA3CF651B349362 /* ZSNetWorkingTool+Request.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "ZSNetWorkingTool+Request.swift"; path = "ZSNetServe/Classes/ZSNetWorkingTool+Request.swift"; sourceTree = "<group>"; };
+		F81A2020AC5BA4123546FB0CAEAA51F1 /* Reachability.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = Reachability.h; sourceTree = "<group>"; };
 		FB3477DE674C12EBC7A36718D125D445 /* URLConvertible+URLRequestConvertible.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "URLConvertible+URLRequestConvertible.swift"; path = "Source/URLConvertible+URLRequestConvertible.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		0A0422BF228DC5019329086251317BF9 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				0A19ADDCC1C39E03FB0848422A8C08C5 /* Alamofire.framework in Frameworks */,
-				ADD1415CB0BD42726B81376B12D0BD1B /* Foundation.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		66B1AFF3CB93CE80DA82D7C617FE676E /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -222,6 +215,15 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		CAD881A71630C21FA0A82CE56D061F98 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D7727994DE4BA54C84226312B599A52B /* Alamofire.framework in Frameworks */,
+				9143152E2BCF3FA3A4EEBD7B1AAABC9A /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		E9827900A9FDD30E0EF565BE321AA421 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -233,13 +235,13 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		0749ACD1691DF5EE18441759EB41574C /* DELETE */ = {
+		11872BE7F6E858789746177BE8206687 /* OPTION */ = {
 			isa = PBXGroup;
 			children = (
-				D5D20EA48059DABD18DE55BF7EFFF0FA /* ZSNetWorkingTool+DELETE.swift */,
+				9A9986FE6D6BCD00D0C53FF25967E152 /* ZSOptionRequest.swift */,
 			);
-			name = DELETE;
-			path = ZSNetServe/Classes/DELETE;
+			name = OPTION;
+			path = ZSNetServe/Classes/OPTION;
 			sourceTree = "<group>";
 		};
 		12AE5613CE0DCFFC8EE882841FA06D6B /* Targets Support Files */ = {
@@ -267,15 +269,55 @@
 			path = "Target Support Files/Pods-ZSNetServe_Tests";
 			sourceTree = "<group>";
 		};
-		2D566E0BAD7DC8A136098D7FEA00865E /* Status */ = {
+		232BD4069F10CB7A043BCC856132159B /* Download */ = {
 			isa = PBXGroup;
 			children = (
-				E1467173EA6163D6C47CEED3B733C2A0 /* Reachability.h */,
-				BDB0E723F4046F9CF2DF9183405F44CC /* Reachability.m */,
-				F2260FBC48634164EA013B25EA55FD27 /* ZSNetWorkStatus.swift */,
+				A3F226F7588156021237A9E138A2828D /* ZSDownloadRequest.swift */,
 			);
-			name = Status;
-			path = ZSNetServe/Classes/Status;
+			name = Download;
+			path = ZSNetServe/Classes/Download;
+			sourceTree = "<group>";
+		};
+		2377AB93C759906CBF07ED7E12DD38A5 /* CONNECT */ = {
+			isa = PBXGroup;
+			children = (
+				217601F2D8E995871867BF7E38CBF7E1 /* ZSConnectRequest.swift */,
+			);
+			name = CONNECT;
+			path = ZSNetServe/Classes/CONNECT;
+			sourceTree = "<group>";
+		};
+		2528C91D2C0FAEEA2FB7A700FA26FBF6 /* ZSNetServe */ = {
+			isa = PBXGroup;
+			children = (
+				763F2B6F01A58DA4E8A1F2E84E84051B /* ZSNetworkConfigure.swift */,
+				B07D6E2DA69CDFD044738D6E31F67F98 /* ZSRequestConfigure.swift */,
+				E42F3DD164FD9C47830FE8F8BBB23370 /* ZSResponseConfigure.swift */,
+				562007D060CE793658E35A62CE419547 /* ZSNetworkRequest.swift */,
+				2377AB93C759906CBF07ED7E12DD38A5 /* CONNECT */,
+				FBCBE33701A603EB447CB93B63CE8F99 /* DELETE */,
+				232BD4069F10CB7A043BCC856132159B /* Download */,
+				30989E9431BF74F3ADA01EC8BB3E8F8A /* GET */,
+				762BFE6BE1048AD841C72EF834079D39 /* HEAD */,
+				11872BE7F6E858789746177BE8206687 /* OPTION */,
+				31AC844F5284C5BD6B4FD06AA967E18E /* Pod */,
+				A9EA32512AACA8D155F2A5AF54F57EF4 /* POST */,
+				D74E7DDF425E59E5C01D6098D486D7AE /* PUT */,
+				A49021B268A413A3C3E1EE9A5E17C2DF /* Status */,
+				418CF5B431215004EFE9FB19A2DE641C /* Support Files */,
+				727EEC43156950BB17E275D7F3AC70D3 /* Upload */,
+			);
+			name = ZSNetServe;
+			path = ../..;
+			sourceTree = "<group>";
+		};
+		30989E9431BF74F3ADA01EC8BB3E8F8A /* GET */ = {
+			isa = PBXGroup;
+			children = (
+				3E6486EE0ECAD28A22E6311E84CBCF53 /* ZSGetRequest.swift */,
+			);
+			name = GET;
+			path = ZSNetServe/Classes/GET;
 			sourceTree = "<group>";
 		};
 		315E4D3F5AB0AD17BE6BDBAAF0B1E9D0 /* Pods */ = {
@@ -286,10 +328,35 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
-		4431EF726C3F16468156AB5551D24C5F /* Development Pods */ = {
+		31AC844F5284C5BD6B4FD06AA967E18E /* Pod */ = {
 			isa = PBXGroup;
 			children = (
-				84E974E6D8A755CC6E8144BFDD53747E /* ZSNetServe */,
+				64DD4AB51CD3C91803D81B008C8177A3 /* LICENSE */,
+				24C72661063DBD78707C04FDA50DB373 /* README.md */,
+				A2B58489AD973EDB9732AD5007B0A66B /* ZSNetServe.podspec */,
+			);
+			name = Pod;
+			sourceTree = "<group>";
+		};
+		418CF5B431215004EFE9FB19A2DE641C /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				94AB4A9DC19F77248A44B8E4A93C5535 /* ZSNetServe.modulemap */,
+				8C794280B63E5E1CDD02A2448C8CA08D /* ZSNetServe-dummy.m */,
+				BD78113098630A54D1305D1FF406D881 /* ZSNetServe-Info.plist */,
+				6F820186B7956DE49129FEB23BEB4EB8 /* ZSNetServe-prefix.pch */,
+				0A29EF6216DE016531E1A765E793F4AA /* ZSNetServe-umbrella.h */,
+				353D79B3CE41DBDE8A085F570FAFBF75 /* ZSNetServe.debug.xcconfig */,
+				93C73673DC2D93BE23CA927766C8FCF1 /* ZSNetServe.release.xcconfig */,
+			);
+			name = "Support Files";
+			path = "Example/Pods/Target Support Files/ZSNetServe";
+			sourceTree = "<group>";
+		};
+		47C0CA82AAA4E47640DEF175302DD8FE /* Development Pods */ = {
+			isa = PBXGroup;
+			children = (
+				2528C91D2C0FAEEA2FB7A700FA26FBF6 /* ZSNetServe */,
 			);
 			name = "Development Pods";
 			sourceTree = "<group>";
@@ -303,22 +370,22 @@
 			name = iOS;
 			sourceTree = "<group>";
 		};
-		5728DA6833700E1350E58A7CDD6D538D /* Download */ = {
+		727EEC43156950BB17E275D7F3AC70D3 /* Upload */ = {
 			isa = PBXGroup;
 			children = (
-				5E6B9ABD4C5B4E3CEE0452C3F6AB0329 /* ZSNetWorkingTool+Download.swift */,
+				693B979A284419CB3FF2FB2FDFEAD239 /* ZSUploadRequest.swift */,
 			);
-			name = Download;
-			path = ZSNetServe/Classes/Download;
+			name = Upload;
+			path = ZSNetServe/Classes/Upload;
 			sourceTree = "<group>";
 		};
-		6564875E2C5AA0C03BFC3760644385F4 /* POST */ = {
+		762BFE6BE1048AD841C72EF834079D39 /* HEAD */ = {
 			isa = PBXGroup;
 			children = (
-				04D000C40E8EFAE18A3093FD81355174 /* ZSNetWorkingTool+POST.swift */,
+				2A7972399303AE5192520612C1610AB1 /* ZSHeadRequest.swift */,
 			);
-			name = POST;
-			path = ZSNetServe/Classes/POST;
+			name = HEAD;
+			path = ZSNetServe/Classes/HEAD;
 			sourceTree = "<group>";
 		};
 		8264AE82FD5F741ADD07C0CC7BDA194A /* Alamofire */ = {
@@ -359,31 +426,7 @@
 				48ADD54A33EF3F4AE3B3770B1B9DBDB5 /* Validation.swift */,
 				94B07D21B7CAA6749C5C457D7AEC1A4E /* Support Files */,
 			);
-			name = Alamofire;
 			path = Alamofire;
-			sourceTree = "<group>";
-		};
-		84E974E6D8A755CC6E8144BFDD53747E /* ZSNetServe */ = {
-			isa = PBXGroup;
-			children = (
-				83872EA4803F28BF5595C5E5E10EA21E /* ZSNetWorkingTool.swift */,
-				F508DD924400A3DD7AA3CF651B349362 /* ZSNetWorkingTool+Request.swift */,
-				A6E1BDAB02D80F9560AD5C7CCA3B4A66 /* ZSNetWorkingTool+Response.swift */,
-				A882C12879C62060C723E87D1E092564 /* CONNECT */,
-				0749ACD1691DF5EE18441759EB41574C /* DELETE */,
-				5728DA6833700E1350E58A7CDD6D538D /* Download */,
-				CCB862047868D5EED209946FB9727D91 /* GET */,
-				F4FD82932CE7195E5CAE59FFEFD1025D /* HEAD */,
-				C08AAFC141EE599CA06FF42DE46B9512 /* OPTION */,
-				D189B49B1C93873E2D5A89F438605FC8 /* Pod */,
-				6564875E2C5AA0C03BFC3760644385F4 /* POST */,
-				90EAD1428C77CBDB5C05CA969AAE02C9 /* PUT */,
-				2D566E0BAD7DC8A136098D7FEA00865E /* Status */,
-				B04F3793C61698DA49A9686776BDA8FD /* Support Files */,
-				FECE44E70EC0AE2A98E90F6B7B402C5B /* Upload */,
-			);
-			name = ZSNetServe;
-			path = ../..;
 			sourceTree = "<group>";
 		};
 		8B7A79262BFE6D94671D449787F3AAA9 /* Frameworks */ = {
@@ -393,15 +436,6 @@
 				4BF62439A2FE1F58E9E704216CF2CE03 /* iOS */,
 			);
 			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		90EAD1428C77CBDB5C05CA969AAE02C9 /* PUT */ = {
-			isa = PBXGroup;
-			children = (
-				62AAFF2C07FCDBB6AF27D759FB805CDA /* ZSNetWorkingTool+PUT.swift */,
-			);
-			name = PUT;
-			path = ZSNetServe/Classes/PUT;
 			sourceTree = "<group>";
 		};
 		94B07D21B7CAA6749C5C457D7AEC1A4E /* Support Files */ = {
@@ -417,6 +451,17 @@
 			);
 			name = "Support Files";
 			path = "../Target Support Files/Alamofire";
+			sourceTree = "<group>";
+		};
+		A49021B268A413A3C3E1EE9A5E17C2DF /* Status */ = {
+			isa = PBXGroup;
+			children = (
+				F81A2020AC5BA4123546FB0CAEAA51F1 /* Reachability.h */,
+				D55AACF52BAEA09DF9AA3D76B3366979 /* Reachability.m */,
+				265447CFC9764F405499244A946C6D7D /* ZSNetWorkStatus.swift */,
+			);
+			name = Status;
+			path = ZSNetServe/Classes/Status;
 			sourceTree = "<group>";
 		};
 		A5A47607607DEAD60D6F0EA533D92D50 /* Pods-ZSNetServe_Example */ = {
@@ -436,15 +481,6 @@
 			path = "Target Support Files/Pods-ZSNetServe_Example";
 			sourceTree = "<group>";
 		};
-		A882C12879C62060C723E87D1E092564 /* CONNECT */ = {
-			isa = PBXGroup;
-			children = (
-				0E400C93EE83BF81D38E5DABEFC44615 /* ZSNetWorkingTool+CONNECT.swift */,
-			);
-			name = CONNECT;
-			path = ZSNetServe/Classes/CONNECT;
-			sourceTree = "<group>";
-		};
 		A91D90CC80B2F1D5E75936F5D490E8F7 /* Products */ = {
 			isa = PBXGroup;
 			children = (
@@ -456,44 +492,20 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		B04F3793C61698DA49A9686776BDA8FD /* Support Files */ = {
+		A9EA32512AACA8D155F2A5AF54F57EF4 /* POST */ = {
 			isa = PBXGroup;
 			children = (
-				29314B49B9C7B41CD836A36AAF552A9C /* ZSNetServe.modulemap */,
-				E759C2ECC918AC1D68A0EA22047B22E2 /* ZSNetServe-dummy.m */,
-				F3A52E3F48838813DD25AF956E79149F /* ZSNetServe-Info.plist */,
-				5E8E8A983CE5B3E731D2F8B864F884A0 /* ZSNetServe-prefix.pch */,
-				0AFF8BB411D93B0BB10F493CFA1167D6 /* ZSNetServe-umbrella.h */,
-				1A27DED39486FA90C427CBBF85ABFEEB /* ZSNetServe.debug.xcconfig */,
-				037F2C340FF5B3DD5454329338E5284E /* ZSNetServe.release.xcconfig */,
+				60CE9805B11DA186E7282B2D36D8A6ED /* ZSPostRequest.swift */,
 			);
-			name = "Support Files";
-			path = "Example/Pods/Target Support Files/ZSNetServe";
-			sourceTree = "<group>";
-		};
-		C08AAFC141EE599CA06FF42DE46B9512 /* OPTION */ = {
-			isa = PBXGroup;
-			children = (
-				E45E32DBB8F30FBEFCAC89CBFB848B78 /* ZSNetWorkingTool+OPTION.swift */,
-			);
-			name = OPTION;
-			path = ZSNetServe/Classes/OPTION;
-			sourceTree = "<group>";
-		};
-		CCB862047868D5EED209946FB9727D91 /* GET */ = {
-			isa = PBXGroup;
-			children = (
-				27F096CB5E3AD656E465A38157D834CE /* ZSNetWorkingTool+GET.swift */,
-			);
-			name = GET;
-			path = ZSNetServe/Classes/GET;
+			name = POST;
+			path = ZSNetServe/Classes/POST;
 			sourceTree = "<group>";
 		};
 		CF1408CF629C7361332E53B88F7BD30C = {
 			isa = PBXGroup;
 			children = (
 				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
-				4431EF726C3F16468156AB5551D24C5F /* Development Pods */,
+				47C0CA82AAA4E47640DEF175302DD8FE /* Development Pods */,
 				8B7A79262BFE6D94671D449787F3AAA9 /* Frameworks */,
 				315E4D3F5AB0AD17BE6BDBAAF0B1E9D0 /* Pods */,
 				A91D90CC80B2F1D5E75936F5D490E8F7 /* Products */,
@@ -501,32 +513,22 @@
 			);
 			sourceTree = "<group>";
 		};
-		D189B49B1C93873E2D5A89F438605FC8 /* Pod */ = {
+		D74E7DDF425E59E5C01D6098D486D7AE /* PUT */ = {
 			isa = PBXGroup;
 			children = (
-				C1A85A2D4DA0061D0EEFF6A6795674DA /* LICENSE */,
-				C3A7AEA42C3F41354EF469BD93EF9AE2 /* README.md */,
-				94DC904E92E94F4F45D63DA35C60F117 /* ZSNetServe.podspec */,
+				2F36D5052F98915AB31FBCC66ECF6ABF /* ZSPutRequest.swift */,
 			);
-			name = Pod;
+			name = PUT;
+			path = ZSNetServe/Classes/PUT;
 			sourceTree = "<group>";
 		};
-		F4FD82932CE7195E5CAE59FFEFD1025D /* HEAD */ = {
+		FBCBE33701A603EB447CB93B63CE8F99 /* DELETE */ = {
 			isa = PBXGroup;
 			children = (
-				B69560A9BE0D36FC7C655B1E6CB2BA66 /* ZSNetWorkingTool+HEAD.swift */,
+				3D1626330FEB501FA211CE2CC485971E /* ZSDeleteRequest.swift */,
 			);
-			name = HEAD;
-			path = ZSNetServe/Classes/HEAD;
-			sourceTree = "<group>";
-		};
-		FECE44E70EC0AE2A98E90F6B7B402C5B /* Upload */ = {
-			isa = PBXGroup;
-			children = (
-				E35AA63FAFB787FD53465E3B608DBE3A /* ZSNetWorkingTool+Upload.swift */,
-			);
-			name = Upload;
-			path = ZSNetServe/Classes/Upload;
+			name = DELETE;
+			path = ZSNetServe/Classes/DELETE;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -548,20 +550,20 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		9558F1BDC95A590ECE77176328641B81 /* Headers */ = {
-			isa = PBXHeadersBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				4F2E77C2EF210AA860C5F2A8A91ADE34 /* Reachability.h in Headers */,
-				4DD703ACDDC15B78DD58BC367D7BE7F2 /* ZSNetServe-umbrella.h in Headers */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		DD5134CC0AD214337C10CC46995CC3CE /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				2BC73DE30871EA6F7D9F600D50F11726 /* Alamofire-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F98538A06ABCDF850F0BFF8F2FC7A409 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D600F247D33294EB00F7E54FF5273DAD /* Reachability.h in Headers */,
+				87EA9B4D49B1A937F237849C092AC080 /* ZSNetServe-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -589,17 +591,17 @@
 		};
 		842F179D2EB706B49F26455F96D3AC11 /* ZSNetServe */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = BD982ECEF1E521C404A62E47FA79665D /* Build configuration list for PBXNativeTarget "ZSNetServe" */;
+			buildConfigurationList = 01F490EC88A0A6E468F62F66F324A7FD /* Build configuration list for PBXNativeTarget "ZSNetServe" */;
 			buildPhases = (
-				9558F1BDC95A590ECE77176328641B81 /* Headers */,
-				2EA40356A01EC5D1AE4832C385C55C6C /* Sources */,
-				0A0422BF228DC5019329086251317BF9 /* Frameworks */,
-				0D78B313445FFE4B7EB6CEAC246A4C0B /* Resources */,
+				F98538A06ABCDF850F0BFF8F2FC7A409 /* Headers */,
+				CF0775368042E6A0EF0734305FD777FA /* Sources */,
+				CAD881A71630C21FA0A82CE56D061F98 /* Frameworks */,
+				D6EAA11E4B2F3A0147CB2BD5CCFEE25A /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				159D8142601A80942E27BBED00B60009 /* PBXTargetDependency */,
+				580280931D2F5AEF251BB4D840690052 /* PBXTargetDependency */,
 			);
 			name = ZSNetServe;
 			productName = ZSNetServe;
@@ -675,13 +677,6 @@
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		0D78B313445FFE4B7EB6CEAC246A4C0B /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		40F01AE866B980B39DF8A4ED7CADE6EB /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -703,31 +698,16 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-/* End PBXResourcesBuildPhase section */
-
-/* Begin PBXSourcesBuildPhase section */
-		2EA40356A01EC5D1AE4832C385C55C6C /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
+		D6EAA11E4B2F3A0147CB2BD5CCFEE25A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B6DA1A8910E5F8EB2445985B74EED2DF /* Reachability.m in Sources */,
-				AC43B59992B0D8C2A3A261F04194D3ED /* ZSNetServe-dummy.m in Sources */,
-				5A17B6BDF0F97366A731EC9937F68AB6 /* ZSNetWorkingTool+CONNECT.swift in Sources */,
-				DEC54AC8EBA2375727A6CD986BC2E569 /* ZSNetWorkingTool+DELETE.swift in Sources */,
-				F3276E3A7F16BCE02A9B7D2E26ABFC68 /* ZSNetWorkingTool+Download.swift in Sources */,
-				0FC96A8105F7EB5964ACA0576D032315 /* ZSNetWorkingTool+GET.swift in Sources */,
-				B55566866F4B27EA46A5CB93EC00A0D0 /* ZSNetWorkingTool+HEAD.swift in Sources */,
-				57491B63205A613EDE592B53AA4A424F /* ZSNetWorkingTool+OPTION.swift in Sources */,
-				54321C6D81D0B6B0F53906692FDBE263 /* ZSNetWorkingTool+POST.swift in Sources */,
-				DB9031BFA2DE042B37D655048BD59A7B /* ZSNetWorkingTool+PUT.swift in Sources */,
-				8CB6DE6AF419F203FD84F5DCAB09A89F /* ZSNetWorkingTool+Request.swift in Sources */,
-				C5AED3AA547911C00E5F055B0A1149C4 /* ZSNetWorkingTool+Response.swift in Sources */,
-				F15B4A3B64F877EF4656C68BFD500F63 /* ZSNetWorkingTool+Upload.swift in Sources */,
-				37C21BF041345B70DC8BDDD77E093D9B /* ZSNetWorkingTool.swift in Sources */,
-				C90B6DC6F1FFB76DA48974435668FD82 /* ZSNetWorkStatus.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
 		91F9B999428F512F3955117F6B115A1C /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -741,6 +721,29 @@
 			buildActionMask = 2147483647;
 			files = (
 				1A3BF3828F8948C2A2561418BC718F3A /* Pods-ZSNetServe_Tests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CF0775368042E6A0EF0734305FD777FA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0B559B8A8247D8A6465385B4CAD9AF9B /* Reachability.m in Sources */,
+				83D2CBF50D8E5BF6D5045BC6BDE43620 /* ZSConnectRequest.swift in Sources */,
+				ECD8F82013068C69DF77C5EE4E4FC455 /* ZSDeleteRequest.swift in Sources */,
+				AF1C4F59D9A888A6B30A20571AE15907 /* ZSDownloadRequest.swift in Sources */,
+				D7C215B7C09B572DDB37BF2F89FD2280 /* ZSGetRequest.swift in Sources */,
+				425747C73DDBC66C59CD45006FDD95F5 /* ZSHeadRequest.swift in Sources */,
+				0D0CD19F915FBD52EDB5F2D8911B828F /* ZSNetServe-dummy.m in Sources */,
+				297E85ABFD39E4412A69727936F9DCB3 /* ZSRequestConfigure.swift in Sources */,
+				29AF208D455B39638A831A8905113138 /* ZSResponseConfigure.swift in Sources */,
+				6E4FB4B302EED496ABEB63E209E327DC /* ZSNetworkConfigure.swift in Sources */,
+				7C686C8241912A0734855CAA9CE78376 /* ZSNetworkRequest.swift in Sources */,
+				C2EF23E7DFFBF42EED86C681FC799C77 /* ZSNetWorkStatus.swift in Sources */,
+				54572370CFB7EC38B2E8AE886A91748F /* ZSOptionRequest.swift in Sources */,
+				79D14648571B22DA261B3917240958C9 /* ZSPostRequest.swift in Sources */,
+				921D56D20CF2F6E39D4C62C3A34FB316 /* ZSPutRequest.swift in Sources */,
+				8D19380B0F89DCA658ADC3CB89E4E910 /* ZSUploadRequest.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -794,11 +797,11 @@
 			target = 842F179D2EB706B49F26455F96D3AC11 /* ZSNetServe */;
 			targetProxy = 88EA19B77FFE729745891EB1E64AF80F /* PBXContainerItemProxy */;
 		};
-		159D8142601A80942E27BBED00B60009 /* PBXTargetDependency */ = {
+		580280931D2F5AEF251BB4D840690052 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = Alamofire;
 			target = EAAA1AD3A8A1B59AB91319EE40752C6D /* Alamofire */;
-			targetProxy = E4B10F0912011B4D3E0CBD06C88711C8 /* PBXContainerItemProxy */;
+			targetProxy = 2CF155AA314F0A793E75F5758AA89716 /* PBXContainerItemProxy */;
 		};
 		6CED38E089A71266424C4171C8404C84 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
@@ -815,40 +818,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
-		4279A25D839ED8075475D66259DEE294 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 037F2C340FF5B3DD5454329338E5284E /* ZSNetServe.release.xcconfig */;
-			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
-				CLANG_ENABLE_OBJC_WEAK = NO;
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/ZSNetServe/ZSNetServe-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/ZSNetServe/ZSNetServe-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/ZSNetServe/ZSNetServe.modulemap";
-				PRODUCT_MODULE_NAME = ZSNetServe;
-				PRODUCT_NAME = ZSNetServe;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
 		599529074DF706DCA5D8F6A48BA2AFF3 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 30FC3A81B796B688C06FC094C264AFC9 /* Pods-ZSNetServe_Example.debug.xcconfig */;
@@ -1036,45 +1005,11 @@
 				MTL_FAST_MATH = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				STRIP_INSTALLED_PRODUCT = NO;
-				SWIFT_COMPILATION_MODE = wholemodule;
-				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 				SWIFT_VERSION = 5.0;
 				SYMROOT = "${SRCROOT}/../build";
 			};
 			name = Release;
-		};
-		8CE5CE9EA54D353B7ADE20FACB103667 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 1A27DED39486FA90C427CBBF85ABFEEB /* ZSNetServe.debug.xcconfig */;
-			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
-				CLANG_ENABLE_OBJC_WEAK = NO;
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/ZSNetServe/ZSNetServe-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/ZSNetServe/ZSNetServe-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/ZSNetServe/ZSNetServe.modulemap";
-				PRODUCT_MODULE_NAME = ZSNetServe;
-				PRODUCT_NAME = ZSNetServe;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
 		};
 		C25C81D8CBFB4B5B67C33DE24A156A66 /* Debug */ = {
 			isa = XCBuildConfiguration;
@@ -1108,6 +1043,40 @@
 				VERSION_INFO_PREFIX = "";
 			};
 			name = Debug;
+		};
+		E18802BF6EBF1BD2D172D14D96E63210 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 93C73673DC2D93BE23CA927766C8FCF1 /* ZSNetServe.release.xcconfig */;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/ZSNetServe/ZSNetServe-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/ZSNetServe/ZSNetServe-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/ZSNetServe/ZSNetServe.modulemap";
+				PRODUCT_MODULE_NAME = ZSNetServe;
+				PRODUCT_NAME = ZSNetServe;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
 		};
 		EDE5B332CFF3F489E8653DA5934B72F3 /* Release */ = {
 			isa = XCBuildConfiguration;
@@ -1215,9 +1184,51 @@
 			};
 			name = Release;
 		};
+		FCF7441CEF140BF565E1F8328C2D73B5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 353D79B3CE41DBDE8A085F570FAFBF75 /* ZSNetServe.debug.xcconfig */;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/ZSNetServe/ZSNetServe-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/ZSNetServe/ZSNetServe-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/ZSNetServe/ZSNetServe.modulemap";
+				PRODUCT_MODULE_NAME = ZSNetServe;
+				PRODUCT_NAME = ZSNetServe;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		01F490EC88A0A6E468F62F66F324A7FD /* Build configuration list for PBXNativeTarget "ZSNetServe" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FCF7441CEF140BF565E1F8328C2D73B5 /* Debug */,
+				E18802BF6EBF1BD2D172D14D96E63210 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		04D2482D1E3F1CD3812674374883D4F3 /* Build configuration list for PBXNativeTarget "Pods-ZSNetServe_Example" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -1241,15 +1252,6 @@
 			buildConfigurations = (
 				C25C81D8CBFB4B5B67C33DE24A156A66 /* Debug */,
 				EFD5BD1E900C776D9145B39D7EF803D9 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		BD982ECEF1E521C404A62E47FA79665D /* Build configuration list for PBXNativeTarget "ZSNetServe" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				8CE5CE9EA54D353B7ADE20FACB103667 /* Debug */,
-				4279A25D839ED8075475D66259DEE294 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

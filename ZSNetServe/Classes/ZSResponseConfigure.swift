@@ -1,5 +1,5 @@
 //
-//  ZSNetWorkingTool+Result.swift
+//  ZSNetworkConfigure+Response.swift
 //  Alamofire
 //
 //  Created by 张森 on 2020/3/12.
@@ -11,7 +11,7 @@ import Foundation
     case JSON = 1, Data
 }
 
-public extension ZSNetWorkingTool {
+public extension ZSNetworkConfigure {
     
     typealias ZSCompletion<ResultType> =
         (_ responseObject: ResultType?,

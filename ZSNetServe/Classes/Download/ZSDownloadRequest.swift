@@ -1,5 +1,5 @@
 //
-//  ZSNetWorkingTool+Download.swift
+//  ZSNetworkRequest+Download.swift
 //  Alamofire
 //
 //  Created by 张森 on 2020/3/12.
@@ -8,7 +8,7 @@
 import Foundation
 import Alamofire
 
-public extension ZSNetWorkingTool {
+public extension ZSNetworkRequest {
     
     class private func destination(cachesURL: URL) -> DownloadRequest.Destination {
         
@@ -23,7 +23,7 @@ public extension ZSNetWorkingTool {
             return (fileURL, [.removePreviousFile, .createIntermediateDirectories])
         }
     }
-
+    
     
     /// 资源下载
     /// - Parameters:
@@ -31,13 +31,14 @@ public extension ZSNetWorkingTool {
     ///   - url: 下载完成后保存资源的位置，默认为 cachesDirectory
     ///   - progress: 进度
     ///   - completion: 下载完成的回调
-    class func Download(_ path: String,
-                               to url: URL = FileManager.default.urls(for: .cachesDirectory, in: .userDomainMask)[0],
-                               progress: ((Double) -> Void)? = nil,
-                               completion: (ZSCompletion<String>)? = nil) {
+    class func Download(
+        _ path: String,
+        to url: URL = FileManager.default.urls(for: .cachesDirectory, in: .userDomainMask)[0],
+        progress: ((Double) -> Void)? = nil,
+        completion: (ZSNetworkConfigure.ZSCompletion<String>)? = nil) {
         
         guard let requestUrl: URL = URL.init(string: path) else { return }
-
+        
         self.default.download(URLRequest.init(url: (requestUrl)),
                               to: destination(cachesURL: url))
             

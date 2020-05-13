@@ -1,5 +1,5 @@
 //
-//  ZSNetWorkingTool+Upload.swift
+//  ZSNetworkRequest+Upload.swift
 //  Alamofire
 //
 //  Created by 张森 on 2020/3/12.
@@ -8,7 +8,7 @@
 import Foundation
 import Alamofire
 
-public extension ZSNetWorkingTool {
+public extension ZSNetworkRequest {
     
     /// 文件上传
     /// - Parameters:
@@ -18,9 +18,9 @@ public extension ZSNetWorkingTool {
     class private func Upload<ResultType>(
         _ request: UploadRequest,
         progress: ((Double) -> Void)? = nil,
-        completion: (ZSCompletion<ResultType>)? = nil) {
+        completion: (ZSNetworkConfigure.ZSCompletion<ResultType>)? = nil) {
         
-        request.validate(contentType: zs_contentType).uploadProgress(queue: DispatchQueue.main, closure: { (progressObject) in
+        request.validate(contentType: ZSNetworkConfigure.zs_contentType).uploadProgress(queue: DispatchQueue.main, closure: { (progressObject) in
             
             if progress != nil {
                 progress!(progressObject.fractionCompleted)
@@ -123,7 +123,7 @@ public extension ZSNetWorkingTool {
         method: HTTPMethod = .post,
         headers: HTTPHeaders? = nil,
         progress: ((Double) -> Void)? = nil,
-        completion: (ZSCompletion<ResultType>)? = nil) {
+        completion: (ZSNetworkConfigure.ZSCompletion<ResultType>)? = nil) {
         
         guard let requestUrl: URL = URL.init(string: path) else { return }
         
@@ -180,7 +180,7 @@ public extension ZSNetWorkingTool {
         method: HTTPMethod = .post,
         headers: HTTPHeaders? = nil,
         progress: ((Double) -> Void)? = nil,
-        completion: (ZSCompletion<ResultType>)? = nil) {
+        completion: (ZSNetworkConfigure.ZSCompletion<ResultType>)? = nil) {
         
         guard let fileUrl: URL = URL.init(string: filePath) else { return }
         guard let requestUrl: URL = URL.init(string: path) else { return }
@@ -232,7 +232,7 @@ public extension ZSNetWorkingTool {
         method: HTTPMethod = .post,
         headers: HTTPHeaders? = nil,
         progress: ((Double) -> Void)? = nil,
-        completion: (ZSCompletion<ResultType>)? = nil) {
+        completion: (ZSNetworkConfigure.ZSCompletion<ResultType>)? = nil) {
         
         guard let requestUrl: URL = URL.init(string: path) else { return }
         
@@ -269,7 +269,7 @@ public extension ZSNetWorkingTool {
         method: HTTPMethod = .post,
         headers: HTTPHeaders? = nil,
         progress: ((Double) -> Void)? = nil,
-        completion: (ZSCompletion<ResultType>)? = nil) {
+        completion: (ZSNetworkConfigure.ZSCompletion<ResultType>)? = nil) {
         
         if let image = file as? UIImage {
             guard let data: Data = image.jpegData(compressionQuality: 0.5) else {
@@ -340,7 +340,7 @@ public extension ZSNetWorkingTool {
         method: HTTPMethod = .post,
         headers: HTTPHeaders? = nil,
         progress: ((Double) -> Void)? = nil,
-        completion: (ZSCompletion<ResultType>)? = nil) {
+        completion: (ZSNetworkConfigure.ZSCompletion<ResultType>)? = nil) {
         
         guard let requestUrl: URL = URL.init(string: path) else { return }
         

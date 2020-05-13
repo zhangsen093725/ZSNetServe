@@ -1,9 +1,9 @@
 {
   "name": "ZSNetServe",
-  "version": "0.1.2",
+  "version": "0.1.8",
   "summary": "基于Alamofire的网络请求框架",
   "description": "基于Alamofire的网络请求框架二次封装",
-  "homepage": "https://github.com/zhangsen093725/ZSNetServe",
+  "homepage": "https://gitee.com/zhangsen093725/ZSNetServe",
   "license": {
     "type": "MIT",
     "file": "LICENSE"
@@ -12,8 +12,8 @@
     "zhangsen093725": "376019018@qq.com"
   },
   "source": {
-    "git": "https://github.com/zhangsen093725/ZSNetServe.git",
-    "tag": "0.1.2"
+    "git": "https://gitee.com/zhangsen093725/ZSNetServe.git",
+    "tag": "0.1.8"
   },
   "swift_versions": "5.0",
   "platforms": {

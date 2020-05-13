@@ -1,4 +1,5 @@
-source 'https://cdn.cocoapods.org/'
+source 'https://mirrors.tuna.tsinghua.edu.cn/git/CocoaPods/Specs.git'
+source 'https://gitee.com/zhangsen093725/sssu-repo-spec.git'
 
 use_frameworks!
 

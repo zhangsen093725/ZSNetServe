@@ -1,5 +1,5 @@
 //
-//  ZSNetWorkingTool+Request.swift
+//  ZSNetworkConfigure+Request.swift
 //  Alamofire
 //
 //  Created by 张森 on 2020/3/12.
@@ -16,7 +16,7 @@ import Alamofire
     case option = 1, post = 2, get = 3, put = 4, head = 5, delete = 6, connect = 7
 }
 
-public extension ZSNetWorkingTool {
+public extension ZSNetworkConfigure {
     
     /// defaultHTTPHeaders
     static let zs_defaultHTTPHeaders: HTTPHeaders = {

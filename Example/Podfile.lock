@@ -1,13 +1,13 @@
 PODS:
   - Alamofire (5.1.0)
-  - ZSNetServe (0.1.2):
+  - ZSNetServe (0.1.8):
     - Alamofire
 
 DEPENDENCIES:
   - ZSNetServe (from `../`)
 
 SPEC REPOS:
-  trunk:
+  https://mirrors.tuna.tsinghua.edu.cn/git/CocoaPods/Specs.git:
     - Alamofire
 
 EXTERNAL SOURCES:
@@ -16,8 +16,8 @@ EXTERNAL SOURCES:
 
 SPEC CHECKSUMS:
   Alamofire: 9d5c5f602928e512395b30950c5984eca840093c
-  ZSNetServe: 3ed88170988c04b0568e7e63095fac431c29e24f
+  ZSNetServe: cd8ae3f407b0fa44702ff5a08341ca8b9f252324
 
-PODFILE CHECKSUM: 397bed683ef1eecb0903738cf8f665407b6f3e29
+PODFILE CHECKSUM: 7c9117183758c889c2a097aaa8cf99e5a6f4fd7c
 
 COCOAPODS: 1.9.0
