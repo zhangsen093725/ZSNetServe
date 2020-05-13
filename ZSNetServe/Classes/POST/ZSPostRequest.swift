@@ -46,8 +46,8 @@ public extension ZSNetworkRequest {
         timeOut: TimeInterval? = nil,
         encoding: RequestEncoding? = nil,
         response: ResponseEncoding? = nil,
-        headers: [String: String] = [:],
-        contentType: Set<String> = [],
+        headers: [String: String]? = nil,
+        contentType: Set<String>? = nil,
         completion: (ZSNetworkConfigure.ZSCompletion<ResultType>)?) {
         
         zs_request(base,
